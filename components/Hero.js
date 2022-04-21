@@ -1,13 +1,14 @@
 import React from "react";
 import { GiDrumKit, GiSaxophone, GiMusicalKeyboard } from 'react-icons/gi';
+import { HeroButton } from "../components/HeroButton";
 
 function Hero() {
   return (
     <>
-      <div className="wrapper px-10 h-80">
+      <div className="wrapper px-10 h-90">
         <div className="mt-28 text-white pt-5 lg:mt-20">
           <div className="tracking-wider text-4xl font-black">
-              <h2 className="text-5xl lg:text-6xl pt-6">Find your sound.</h2>
+              <h2 className="text-5xl lg:text-6xl pt-2">Nyasa <br></br> Engineering <br></br> Consultancy LTD.</h2>
               <p className="text-sm pt-2">
               Discover over 5 million beats to write your next song to
               </p>

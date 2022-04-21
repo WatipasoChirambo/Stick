@@ -1,17 +1,20 @@
 import React, { useState } from "react";
 import { MdMenu } from "react-icons/md";
+import { FaLinkedinIn, FaFacebook, FaTwitter,FaInstagram } from 'react-icons/fa';
+
+
 
 function Navbar() {
   const [toggle, setToggle] = useState(false);
 
   return (
-    <nav className="fixed top-0 w-full text-white">
-      <div className="md:flex justify-between px-10 py-4 bg-black">
-        <div className="md:flex justify-between gap-4">
+    <nav className="flex justify-between fixed top-0 px-10 py-6 w-full text-black bg-white opacity-90">
+      <div className="md:flex gap-20">
+        <div className="md:flex gap-4">
           <div className="md:flex gap-2">
             <div className="flex gap-2 w-full">
               <div className="flex gap-2 w-full">
-                <h2>Logo</h2>
+                <h1 className="text-4xl">Logo</h1>
               </div>
               <div className="lg:flex justify-around gap-4 align-center">
                 <MdMenu
@@ -23,29 +26,28 @@ function Navbar() {
                 />
               </div>
             </div>
-            <div className="h-10 w-full mt-2">
-              <input
-                type="text"
-                placeholder="search"
-                className="border rounded-full p-3 w-full h-full text-left"
-              />
-            </div>
           </div>
         </div>
         <div
           className={
             toggle
-              ? "h-screen z-20 text-center text-white p-4 m-2"
-              : "hidden md:visible lg:flex gap-2 text-center text-white"
+              ? "hidden h-screen z-20 text-center text-black p-4 m-2"
+              : "hidden md:visible lg:flex gap-5 text-center text-black"
           }
         >
-          <h3>Home</h3>
-          <h3>Hits</h3>
+          <h3>Services</h3>
+          <h3>industry Sectors</h3>
+          <h3>Projects</h3>
+          <h3>News</h3>
+          <h3>Contact</h3>
+          <h3>About Us</h3>
         </div>
-        <div className="hidden lg:flex justify-around gap-4 align-center">
-          <h3 className="border rounded-lg p-2">Sign Up</h3>
-          <h3 className="border rounded-lg p-2 lg:visible">Log In</h3>
-        </div>
+      </div>
+      <div className="flex gap-4">
+        <FaLinkedinIn/>
+        <FaFacebook/>
+        <FaInstagram/>
+        <FaTwitter/>
       </div>
     </nav>
   );
