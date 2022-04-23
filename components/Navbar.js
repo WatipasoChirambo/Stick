@@ -28,7 +28,7 @@ function Navbar() {
           }
         >
           <h3>Services</h3>
-          <h3>industry Sectors</h3>
+          <h3>Industry Sectors</h3>
           <h3>Projects</h3>
           <h3>News</h3>
           <h3>Contact</h3>
