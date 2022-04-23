@@ -8,7 +8,7 @@ function Navbar() {
   const [toggle, setToggle] = useState(false);
 
   return (
-    <nav className="flex justify-between items-center fixed top-0 px-10 h-[90px] items-center w-full text-black bg-white border b-2">
+    <nav className="flex justify-between items-center fixed top-0 px-10 h-[90px] items-center w-full text-black bg-white border-solid border-2">
       <div className="flex justify-between gap-12 md:flex">
         <div className="flex justify-between md:flex gap-4">
           <div className="flex justify-between md:flex gap-2">
