@@ -5,14 +5,14 @@ import Navbar from '../components/Navbar'
 import Hero from '../components/Hero'
 import Trending from '../components/Trending'
 import ReMembers from '../components/ReMembers'
+import Sector from '../components/Sector'
 
 export default function Home() {
   return (
     <div >
       <Navbar/>
       <Hero className="px-10"/>
-      <Trending className="px-10"/>
-      <ReMembers/>
+      <Trending className="flex justify-center"/>
     </div>
   )
 }

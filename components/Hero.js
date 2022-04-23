@@ -1,21 +1,19 @@
 import React from "react";
 import { GiDrumKit, GiSaxophone, GiMusicalKeyboard } from 'react-icons/gi';
-import { HeroButton } from "../components/HeroButton";
+import Button from "./Button";
 
 function Hero() {
   return (
     <>
-      <div className="wrapper px-10 h-90">
-        <div className="mt-28 text-white pt-5 lg:mt-20">
-          <div className="tracking-wider text-4xl font-black">
-              <h2 className="text-5xl lg:text-6xl pt-2">Nyasa <br></br> Engineering <br></br> Consultancy LTD.</h2>
-              <p className="text-sm pt-2">
-              Discover over 5 million beats to write your next song to
+      <div className="wrapper px-10 items-center h-[550px]">
+        <div className="items-center text-white pt-[40px]">
+          <div className=" pt-28">
+              <h2 className="tracking-wider pt-24 text-5xl font-black bold lg:text-6xl pt-2 bold"> <span>N</span>yasa <br></br> Engineering <br></br> Consultancy LTD.</h2>
+              <p className="text-xs pt-3 lg:text-sm">
+              START YOUR COMPLETE PROJECT CYCLE WITH US
               </p>
               <div className="flex gap-2 pt-2">
-              <GiMusicalKeyboard size={50} className="text-green-400"/>
-              <GiSaxophone size={50} className="text-green-400"/>
-              <GiDrumKit size={50} className="text-green-400"/>
+              <Button text="DONWLOAD PORTFOLIO"/>
               </div>
           </div>
         </div>
@@ -23,9 +21,8 @@ function Hero() {
       <style jsx>
       {`
         .wrapper{
-            background:linear-gradient(0deg, black, rgba(255, 0, 150, 0.3)), url("hero.jpg");
+            background:url("hero.png");
             background-size:cover;
-
         }
       `}
       </style>
