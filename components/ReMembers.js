@@ -15,10 +15,10 @@ function ReMembers() {
             WHY <br></br> NEC?
             </span>
           </h4>
-          <div className="h-40">
+          <div className="h-38">
             <Image src={Why}/>
           </div>
-          <div className="bg-[#2F4858] opacity-90 h-auto lg:w-[320px] lg:absolute lg:top-48 p-2 text-white mt-12">
+          <div className="bg-[#2F4858] opacity-90 h-auto lg:w-[320px] lg:absolute lg:top-48 p-2 text-white mt-4">
             <p className="text-sm z-96">
               Lorem ipsum dolor sit amet, consectetur adipiscing
               elit.Aliquam magna metus, elementum vitae sem eget,
