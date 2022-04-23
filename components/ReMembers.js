@@ -8,17 +8,17 @@ import Why from '../images/why.png'
 function ReMembers() {
   return (
     <>
-      <div className="flex justify-between w-full h-[550px] bg-[#2F4858] mt-20 px-10">
-        <div className="pt-28 flex flex-wrap gap-4 relative w-[500px]">
-          <h4 className="text-3xl font-semibold text-white">
+      <div className="lg:flex justify-between w-full lg:h-[550px] bg-[#2F4858] mt-20 px-10">
+        <div className="lg:pt-28 lg:flex flex-wrap gap-4 relative lg:w-[500px] pt-8">
+          <h4 className="text-3xl font-semibold text-white text-center mb-4">
             <span className="border-b-4 border-orange-500">
             WHY <br></br> NEC?
             </span>
           </h4>
-          <div>
-            <Image src={Why} height={300} width={300} />
+          <div className="h-40">
+            <Image src={Why}/>
           </div>
-          <div className="bg-[#2F4858] opacity-90 h-auto w-[320px] absolute top-48 p-2 text-white mt-12">
+          <div className="bg-[#2F4858] opacity-90 h-auto lg:w-[320px] lg:absolute lg:top-48 p-2 text-white mt-12">
             <p className="text-sm z-96">
               Lorem ipsum dolor sit amet, consectetur adipiscing
               elit.Aliquam magna metus, elementum vitae sem eget,
@@ -28,7 +28,7 @@ function ReMembers() {
             </p>
           </div>
         </div>
-        <div className="grid mt-16 mb-4 ">
+        <div className="grid mt-16 mb-4 hidden lg:grid">
           <Stack title="Availability" />
           <Stack title="Client Focus" />
           <Stack title="Goal Driven" />

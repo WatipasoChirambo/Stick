@@ -7,7 +7,7 @@ function Trending() {
     <>
       <div className="px-10 pt-8 flex justify-center m-auto">
         <div>
-          <h3 className="text-center text-xl lg:text-3xl font-black font-bold">INDUSTRY SECTORS</h3>
+          <h3 className="text-center text-xl lg:text-3xl font-black w-[215px] font-bold border-b-4 m-auto lg:w-[300px] border-orange-500">INDUSTRY SECTORS</h3>
           <div className="flex flex-wrap gap-12 pt-10">
             <Sector title="FOOD & NUTRITION" />
             <Sector title="AGRICULTURE" />
