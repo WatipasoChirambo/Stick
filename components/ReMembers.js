@@ -10,7 +10,7 @@ function ReMembers() {
     <>
       <div className="lg:flex justify-between w-full lg:h-[550px] bg-[#2F4858] mt-20 px-10">
         <div className="lg:pt-28 lg:flex flex-wrap gap-4 relative lg:w-[500px] pt-8">
-          <h4 className="text-3xl font-semibold text-white text-center mb-4">
+          <h4 className="text-3xl font-bold text-white text-center mb-4">
             <span className="border-b-4 border-orange-500">
             WHY <br></br> NEC?
             </span>
