@@ -36,10 +36,10 @@ function Navbar() {
         </div>
       </div>
       <div className="hidden lg:flex gap-4">
-        <FaTwitter size={25} />
-        <FaFacebook size={25} />
-        <FaInstagram size={25} />
-        <FaLinkedinIn size={25} />
+        <FaTwitter size={25} className="hover:text-orange-500 cursor-pointer"/>
+        <FaFacebook size={25} className="hover:text-orange-500 cursor-pointer"/>
+        <FaInstagram size={25} className="hover:text-orange-500 cursor-pointer"/>
+        <FaLinkedinIn size={25} className="hover:text-orange-500 cursor-pointer"/>
       </div>
       <div className="lg:hidden">
         <MdMenu

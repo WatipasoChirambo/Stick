@@ -5,14 +5,16 @@ import Sector from "./Sector";
 function Trending() {
   return (
     <>
-      <div className="px-10 pt-8">
-        <h3 className="text-center text-xl lg:text-3xl font-bold">INDUSTRY SECTORS</h3>
-        <div className="flex flex-wrap gap-14 pt-10">
-          <Sector title="FOOD & NUTRITION"/>
-          <Sector title="AGRICULTURE"/>
-          <Sector title="INFORMATION TECHNOLOGY"/>
-          <Sector title="HEALTH"/>
-          <Sector title="INDUSTRIAL HUB"/>
+      <div className="px-10 pt-8 flex justify-center m-auto">
+        <div>
+          <h3 className="text-center text-xl lg:text-3xl font-black font-bold">INDUSTRY SECTORS</h3>
+          <div className="flex flex-wrap gap-12 pt-10">
+            <Sector title="FOOD & NUTRITION" />
+            <Sector title="AGRICULTURE" />
+            <Sector title="INFORMATION TECHNOLOGY" />
+            <Sector title="HEALTH" />
+            <Sector title="INDUSTRIAL HUB" />
+          </div>
         </div>
       </div>
       <style jsx>
