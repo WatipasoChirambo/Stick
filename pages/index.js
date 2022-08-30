@@ -4,7 +4,7 @@ import styles from '../styles/Home.module.css'
 import Navbar from '../components/Navbar'
 import Contact from '../components/Contact/Contact'
 import Hero from '../components/Hero'
-import Newsletter from '../components/Newsletter'
+import Levels from '../components/Levels'
 import Trending from '../components/Trending'
 import Sector from '../components/Sector'
 import ReMembers from '../components/ReMembers'
@@ -15,10 +15,11 @@ export default function Home() {
     <div >
       <Navbar/>
       <Hero className="px-10"/>
+      <Levels/>
       <Trending/>
       <ReMembers/>
       <Contact/>
-      <Newsletter/>
+      
     </div>
   )
 }
