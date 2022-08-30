@@ -1,11 +1,25 @@
 import React from 'react'
+import Image from 'next/image'
+import Why from '../images/why.png'
+import Typography from '@mui/material/Typography';
+import Button from '@mui/material/Button';
+import Paper from '@mui/material/Paper';
 
 function Stack({title}) {
     return (
-        <div className='border border-solid px-4 w-[400px] h-10 overflow-hidden hover:h-[300px] bg-white text-[#EE9408] duration-500 hover:text-white hover:bg-[#EE9408]'>
-            <h4 className='text-3xl text-center pt-1 duration-500 hover:text-left'>{title}</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis placerat eros quis risus pretium aliquet. Phasellus posuere eros ultricies, sagittis sapien at, tristique sem. Vestibulum ut lacinia leo.</p>
-        </div>
+        <Paper className="w-[250px] p-2 text-left">
+            <Image src={Why}/>
+            <Typography variant="h5" gutterBottom>
+        h5. Heading
+      </Typography>
+      <Typography variant="body2" gutterBottom>
+        body2. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos
+        blanditiis tenetur unde suscipit, quam beatae rerum inventore consectetur,
+        neque doloribus, cupiditate numquam dignissimos laborum fugiat deleniti? Eum
+        quasi quidem quibusdam.
+      </Typography>
+      <Button variant="outlined">Read More</Button>
+        </Paper>
     )
 }
 

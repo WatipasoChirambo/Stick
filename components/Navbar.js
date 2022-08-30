@@ -1,55 +1,73 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { MdMenu } from "react-icons/md";
-import { FaLinkedinIn, FaFacebook, FaTwitter, FaInstagram } from 'react-icons/fa';
-import Image from 'next/image'
-
+import {
+  FaLinkedinIn,
+  FaFacebook,
+  FaTwitter,
+  FaInstagram,
+} from "react-icons/fa";
+import Image from "next/image";
 
 function Navbar() {
   const [toggle, setToggle] = useState(false);
+  const [navBg, setNavBg] = useState(false);
+
+  const toggleNav =()=>{
+    setToggle(!toggle)
+  }
+
+  const changeNavBg = () => {
+    window.scrollY >= 120 ? setNavBg(true) : setNavBg(false);
+  };
+  useEffect(() => {
+    window.addEventListener("scroll", changeNavBg);
+    return () => {
+      window.removeEventListener("scroll", changeNavBg);
+    };
+  }, []);
 
   return (
-    <nav className="flex justify-between items-center fixed top-0 px-10 h-[90px] items-center w-full text-black bg-white border-solid border-2">
-      <div className="flex justify-between gap-12 md:flex">
-        <div className="flex justify-between md:flex gap-4">
-          <div className="flex justify-between md:flex gap-2">
-            <Image
-              src="/logo.png"
-              alt="Picture of the author"
-              width={70}
-              height={70}
-            />
+    <>
+      <nav
+        className={
+          navBg
+            ? "z-20 fixed top-0 px-10 bg-white w-full text-blue-500"
+            : "z-20 fixed top-0 px-10 w-full text-blue-500"
+        }
+      >
+        <div className="flex justify-between items-center">
+          <div className="relative ">
+            <Image src="/logo.png" height={100} width={170} />
+          </div>
+          <div className="hidden lg:flex gap-4">
+            <h6>Home</h6>
+            <h6>About</h6>
+            <h6>Contact</h6>
+          </div>
+          <div className="flex items-center ">
+            <div className="lg:hidden">
+              <MdMenu size={45} onClick={toggleNav}/>
+            </div>
+            <div className="hidden lg:flex gap-4 items-center">
+              <FaTwitter size={15} className="text-blue-500 cursor-pointer" />
+              <FaFacebook size={15} className="text-blue-500 cursor-pointer" />
+              <FaInstagram size={15} className="text-blue-500 cursor-pointer" />
+              <FaLinkedinIn
+                size={15}
+                className="text-blue-500 cursor-pointer"
+              />
+            </div>
           </div>
         </div>
-        <div
-          className={
-            toggle
-              ? "h-screen z-20 align-center items-center text-center text-black"
-              : "hidden flex items-center md:visible lg:flex gap-5 text-center text-black"
-          }
-        >
-          <h3>Services</h3>
-          <h3>Industry Sectors</h3>
-          <h3>Projects</h3>
-          <h3>News</h3>
-          <h3>Contact</h3>
-          <h3>About Us</h3>
-        </div>
-      </div>
-      <div className="hidden lg:flex gap-4">
-        <FaTwitter size={25} className="hover:text-orange-500 cursor-pointer"/>
-        <FaFacebook size={25} className="hover:text-orange-500 cursor-pointer"/>
-        <FaInstagram size={25} className="hover:text-orange-500 cursor-pointer"/>
-        <FaLinkedinIn size={25} className="hover:text-orange-500 cursor-pointer"/>
-      </div>
-      <div className="lg:hidden">
-        <MdMenu
-          size={40}
-          onClick={() => {
-            setToggle(!toggle);
-          }}
-        />
-      </div>
-    </nav>
+        {toggle && 
+          <div className="bg-blue-500 text-white grid gap-4 text-center p-10">
+            <h6>Home</h6>
+            <h6>About</h6>
+            <h6>Contact</h6>
+          </div>
+        }
+      </nav>
+    </>
   );
 }
 

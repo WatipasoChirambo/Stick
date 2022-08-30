@@ -1,19 +1,23 @@
 import React from 'react'
-import Button from './Button'
+import Image from 'next/image'
+import Why from '../images/why.png'
+import Typography from '@mui/material/Typography';
+import Paper from '@mui/material/Paper';
 
 function Sector({ title }) {
     return (
-        <div className='w-96 p-4'>
-            <h3 className='font-black font-semibold'>{title}</h3>
-            <p className='mt-2 text-sm'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Aliquam magna metus, elementum vitae sem eget,
-                iaculis varius mi. Donec vel elementum arcu.
-                Donec porta lorem varius mauris semper,
-                et cursus orci placerat.</p>
-            <div className='mt-4'>
-                <Button text="Learn More" />
-            </div>
-        </div>
+        <Paper className="w-[270px] text-left p-2">
+            <Image src={Why}/>
+            <Typography variant="h5" gutterBottom>
+        h5. Heading
+      </Typography>
+      <Typography variant="body2" gutterBottom>
+        body2. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos
+        blanditiis tenetur unde suscipit, quam beatae rerum inventore consectetur,
+        neque doloribus, cupiditate numquam dignissimos laborum fugiat deleniti? Eum
+        quasi quidem quibusdam.
+      </Typography>
+        </Paper>
     )
 }
 

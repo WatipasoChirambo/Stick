@@ -1,19 +1,23 @@
 import React from "react";
 import { GiDrumKit, GiSaxophone, GiMusicalKeyboard } from 'react-icons/gi';
-import Button from "./Button";
+import Button from '@mui/material/Button';
+import Typography from '@mui/material/Typography';
 
 function Hero() {
   return (
     <>
-      <div className="wrapper px-10 items-center h-[550px]">
-        <div className="items-center text-white pt-[40px]">
-          <div className=" pt-28">
-              <h2 className="tracking-wider pt-24 text-5xl font-black bold lg:text-6xl pt-2 bold"> <span>N</span>yasa <br></br> Engineering <br></br> Consultancy LTD.</h2>
-              <p className="text-xs pt-3 lg:text-sm">
-              START YOUR COMPLETE PROJECT CYCLE WITH US
-              </p>
-              <div className="flex gap-2 pt-2">
-              <Button text="DONWLOAD PORTFOLIO"/>
+      <div className="flex justify-center text-center wrapper px-10 items-center h-screen">
+        <div className="items-center text-white">
+          <div>
+          <Typography variant="h2" gutterBottom>
+        h2. Heading
+      </Typography>
+      <Typography variant="subtitle1" gutterBottom>
+        subtitle1. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos
+        blanditiis tenetur
+      </Typography>
+              <div className="flex justify-center gap-2 pt-8">
+              <Button variant="contained">Contained</Button>
               </div>
           </div>
         </div>
@@ -21,7 +25,9 @@ function Hero() {
       <style jsx>
       {`
         .wrapper{
-            background:url("hero.png");
+            background:url("hero.jpg");
+            background-color: rgba(0, 0, 0, 0.90); /* use rgba for fine adjustments */
+  background-blend-mode: multiply;
             background-size:cover;
         }
       `}
@@ -29,5 +35,4 @@ function Hero() {
     </>
   );
 }
-
 export default Hero;
