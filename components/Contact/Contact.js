@@ -10,7 +10,7 @@ export default function Contact() {
   return (
     <Paper sx={{padding:5,display:'flex',flexWrap:'wrap',gap:5,justifyContent:'center',alignItems:'center'}}>
       <Grid sx={{textAlign:'center'}}>
-        <Typography variant="h6" gutterBottom>
+        <Typography variant="caption" gutterBottom>
           Want to get in touch?
         </Typography>
         <Typography variant="h4" gutterBottom>

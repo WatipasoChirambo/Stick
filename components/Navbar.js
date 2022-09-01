@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { MdMenu } from "react-icons/md";
+import { MdMenu, MdClose } from "react-icons/md";
 import {
   FaLinkedinIn,
   FaFacebook,
@@ -53,7 +53,11 @@ function Navbar() {
 
           <div className="flex items-center ">
             <div className="lg:hidden">
-              <MdMenu size={45} onClick={toggleNav} />
+              {toggle ? (
+                <MdClose size={35} onClick={toggleNav} />
+              ) : (
+                <MdMenu size={35} onClick={toggleNav} />
+              )}
             </div>
             <div className="hidden lg:flex gap-4 items-center">
               <FaTwitter

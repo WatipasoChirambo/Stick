@@ -20,8 +20,8 @@ function ReMembers() {
               options={{
                 rewind: true,
                 autoplay:true,
-                perPage: 3,
-                perMove: 3,
+                perPage: 2,
+                perMove: 2,
                 gap: 30,
                 padding: "1rem",
                 pagination: false,
