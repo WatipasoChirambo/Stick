@@ -1,3 +1,3 @@
 export const NavItems = [
-    'Home','About','Contact'
+    'Home','About','Contact','Packages'
 ]

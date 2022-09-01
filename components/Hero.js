@@ -26,7 +26,7 @@ function Hero() {
       {`
         .wrapper{
             background:url("hero.jpg");
-            background-color: rgba(0, 0, 40, 0.90); /* use rgba for fine adjustments */
+            background-color: rgba(0, 0, 80, 0.60); /* use rgba for fine adjustments */
   background-blend-mode: multiply;
             background-size:cover;
         }

@@ -67,10 +67,14 @@ function Navbar() {
           </div>
         </div>
         {toggle && (
-          <div className="bg-blue-500 text-white grid gap-4 text-center p-10">
-            <h6>Home</h6>
-            <h6>About</h6>
-            <h6>Contact</h6>
+          <div className="bg-blue-500 text-white grid gap-4 text-center p-10 bg-opacity-90">
+            {NavItems.map((val) => (
+                <div key={val}>
+                  <Typography variant="caption" gutterBottom>
+                    {val}
+                  </Typography>
+                </div>
+              ))}
           </div>
         )}
       </nav>
