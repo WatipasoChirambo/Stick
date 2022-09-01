@@ -21,8 +21,8 @@ function ReMembers() {
               options={{
                 rewind: true,
                 autoplay:true,
-                perPage: 4,
-                perMove: 4,
+                perPage: 2,
+                perMove: 2,
                 gap: 10,
                 focus:'center',
                 pagination: false,

@@ -6,7 +6,7 @@ import Contact from '../components/Contact/Contact'
 import Hero from '../components/Hero'
 import Levels from '../components/Levels'
 import Trending from '../components/Trending'
-import Sector from '../components/Sector'
+import Footer from '../components/Footer'
 import ReMembers from '../components/ReMembers'
 import Brief from '../components/Brief'
 
@@ -19,6 +19,7 @@ export default function Home() {
       <Trending/>
       <ReMembers/>
       <Brief/>
+      <Footer/>
     </div>
   )
 }
