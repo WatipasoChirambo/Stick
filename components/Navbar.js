@@ -70,7 +70,7 @@ function Navbar() {
               />
               <FaLinkedinIn
                 size={15}
-                className="text-blue-500 cursor-pointer"
+                className={navBg ? "text-blue-500" : "text-white"}
               />
             </div>
           </div>
