@@ -8,13 +8,13 @@ function Trending() {
     <>
       <div className="px-10 py-20 text-center flex justify-center align-center m-auto">
         <div>
-        <Typography variant="subtitle2" gutterBottom>
+        <Typography variant="body2" gutterBottom>
           choose from our
         </Typography>
-        <Typography variant="h5" gutterBottom>
+        <Typography variant="h4" gutterBottom>
         Packages
       </Typography>
-          <div className="flex justify-between flex-wrap gap-12 pt-10">
+          <div className="flex justify-center flex-wrap gap-12 pt-10">
             <Package grade="Grade B"/>
             <Package grade="Grade C"/>
             <Package grade="Grade D"/>
