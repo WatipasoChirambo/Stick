@@ -20,11 +20,8 @@ export default function Contact() {
       component="form"
     >
       <Grid container spacing={2}>
-        <Grid item xs={6}>
-        <TextField fullWidth id="outlined-basic" label="First Name" variant="outlined" />
-        </Grid>
-        <Grid item xs={6}>
-        <TextField fullWidth id="outlined-basic" label="Last Name" variant="outlined" />
+        <Grid item xs={12}>
+        <TextField fullWidth id="outlined-basic" label="Full Name" variant="outlined" />
         </Grid>
         <Grid item xs={12}>
         <TextField fullWidth id="outlined-basic" label="Email" variant="outlined" />

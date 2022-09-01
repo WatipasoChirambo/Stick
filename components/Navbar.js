@@ -33,14 +33,14 @@ function Navbar() {
       <nav
         className={
           navBg
-            ? "z-20 fixed top-0 px-10 bg-white w-full text-blue-500 border border-dotted"
+            ? "z-20 fixed top-0 px-10 bg-white w-full text-blue-500 border border-dotted bg-opacity-80"
             : "z-20 fixed top-0 px-10 w-full text-white"
         }
       >
         <div className="flex justify-between items-center">
           <div className="flex items-center gap-12">
             <Image src="/logo.png" height={100} width={170} />
-            <div className="flex gap-6">
+            <div className="hidden lg:flex gap-6">
               {NavItems.map((val) => (
                 <div key={val}>
                   <Typography variant="caption" gutterBottom>
