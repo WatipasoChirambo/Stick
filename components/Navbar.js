@@ -56,9 +56,18 @@ function Navbar() {
               <MdMenu size={45} onClick={toggleNav} />
             </div>
             <div className="hidden lg:flex gap-4 items-center">
-              <FaTwitter size={15} className="text-blue-500 cursor-pointer" />
-              <FaFacebook size={15} className="text-blue-500 cursor-pointer" />
-              <FaInstagram size={15} className="text-blue-500 cursor-pointer" />
+              <FaTwitter
+                size={15}
+                className={navBg ? "text-blue-500" : "text-white"}
+              />
+              <FaFacebook
+                size={15}
+                className={navBg ? "text-blue-500" : "text-white"}
+              />
+              <FaInstagram
+                size={15}
+                className={navBg ? "text-blue-500" : "text-white"}
+              />
               <FaLinkedinIn
                 size={15}
                 className="text-blue-500 cursor-pointer"
@@ -69,12 +78,12 @@ function Navbar() {
         {toggle && (
           <div className="bg-blue-500 text-white grid gap-4 text-center p-10 bg-opacity-90">
             {NavItems.map((val) => (
-                <div key={val}>
-                  <Typography variant="caption" gutterBottom>
-                    {val}
-                  </Typography>
-                </div>
-              ))}
+              <div key={val}>
+                <Typography variant="caption" gutterBottom>
+                  {val}
+                </Typography>
+              </div>
+            ))}
           </div>
         )}
       </nav>
