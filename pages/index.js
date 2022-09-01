@@ -8,7 +8,7 @@ import Levels from '../components/Levels'
 import Trending from '../components/Trending'
 import Sector from '../components/Sector'
 import ReMembers from '../components/ReMembers'
-import stack from '../components/Stack'
+import Brief from '../components/Brief'
 
 export default function Home() {
   return (
@@ -18,8 +18,7 @@ export default function Home() {
       <Levels/>
       <Trending/>
       <ReMembers/>
-      <Contact/>
-      
+      <Brief/>
     </div>
   )
 }

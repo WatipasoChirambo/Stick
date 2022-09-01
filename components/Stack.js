@@ -7,20 +7,15 @@ import Paper from "@mui/material/Paper";
 
 function Stack({ title }) {
   return (
-    <div>
+    <div className="">
       <Image src={Why} className="rounded-full" height={100} width={100} />
-      <Typography variant="h5" gutterBottom>
+      <Typography variant="subtitle1" gutterBottom>
         h5. Heading
       </Typography>
       <div className="">
-        <div className="">
-          <Typography variant="caption" gutterBottom>
-          body2. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos
-          blanditiis tenetur unde suscipit, quam beatae rerum inventore
-          consectetur, neque doloribus, cupiditate numquam dignissimos laborum
-          fugiat deleniti? Eum quasi quidem quibusdam.
+          <Typography variant="caption">
+          body2. Lorem ipsum dolor sit amet, consectetur adipisicing eli
         </Typography>
-        </div>
       </div>
     </div>
   );
