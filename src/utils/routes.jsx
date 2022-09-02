@@ -1,3 +1,14 @@
 export const NavItems = [
-    'Home','About','Contact','Packages'
+    {
+        title:"Home",
+        link:"/"
+    },
+    {
+        title:"About",
+        link:"/About"
+    },
+    {
+        title:"Contact",
+        link:"/Contact"
+    }
 ]

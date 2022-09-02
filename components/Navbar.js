@@ -9,6 +9,7 @@ import {
 import Image from "next/image";
 import Typography from "@mui/material/Typography";
 import { NavItems } from "../src/utils/routes";
+import Link from 'next/link';
 
 function Navbar() {
   const [toggle, setToggle] = useState(false);
@@ -41,10 +42,10 @@ function Navbar() {
           <div className="flex items-center gap-12">
             <Image src="/logo.png" height={100} width={170} />
             <div className="hidden lg:flex gap-6">
-              {NavItems.map((val) => (
-                <div key={val}>
+              {NavItems.map((val,index) => (
+                <div key={index}>
                   <Typography variant="caption" gutterBottom>
-                    {val}
+                    <Link href={val.link}>{val.title}</Link>
                   </Typography>
                 </div>
               ))}
@@ -81,10 +82,10 @@ function Navbar() {
         </div>
         {toggle && (
           <div className="bg-blue-500 text-white grid gap-4 text-center p-10 bg-opacity-90">
-            {NavItems.map((val) => (
-              <div key={val}>
+            {NavItems.map((val,index) => (
+              <div key={val.index}>
                 <Typography variant="caption" gutterBottom>
-                  {val}
+                <Link href={val.link}>{val.title}</Link>
                 </Typography>
               </div>
             ))}

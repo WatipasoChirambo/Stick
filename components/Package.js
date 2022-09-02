@@ -42,7 +42,7 @@ export default function Package({ grade }) {
               </TableCell>
               <TableCell align="center">
                 <Typography variant="caption" gutterBottom>
-                  Prices
+                  Price
                 </Typography>
               </TableCell>
             </TableRow>

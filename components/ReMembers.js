@@ -7,14 +7,17 @@ import Stack from "./Stack";
 function ReMembers() {
   return (
     <>
-      <div className="py-10 text-center flex justify-center bg-blue-600 align-center m-auto">
-        <div>
-          <Typography variant="body2" gutterBottom>
+      <div className="py-20 text-center flex justify-center bg-blue-600 align-center m-auto">
+        <div className="p-4">
+          <div className="grid gap-2 pb-4">
+            <Typography variant="body2" gutterBottom>
             Our Customers
           </Typography>
           <Typography variant="h4" gutterBottom>
             Testimonials
           </Typography>
+          </div>
+          
           <div className="py-10">
             <Splide
             
@@ -24,6 +27,7 @@ function ReMembers() {
                 perPage: 2,
                 perMove: 2,
                 gap: 10,
+                padding:1,
                 focus:'center',
                 pagination: false,
                 breakpoints: {

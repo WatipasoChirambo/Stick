@@ -8,9 +8,8 @@ import Paper from "@mui/material/Paper";
 function Stack({ title }) {
   return (
     <div className="m-2">
-      <Paper sx={{ paddingBottom: 4, paddintTop: 4 }}>
         <div style={{ paddingTop: 2 }}>
-          <Image src={Why} className="h-screen" height={100} width={100} />
+          <Image src={Why} className="rounded-full" height={100} width={100} />
         </div>
         <div>
           <Typography variant="subtitle1" gutterBottom>
@@ -22,7 +21,6 @@ function Stack({ title }) {
             </Typography>
           </div>
         </div>
-      </Paper>
     </div>
   );
 }

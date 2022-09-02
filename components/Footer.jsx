@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Typography from "@mui/material/Typography";
 
 const d = new Date();
 let year = d.getFullYear();
@@ -11,7 +12,11 @@ function Footer() {
         <div className="flex justify-center">
           <Image src="/logo.png" height={100} width={170} />
         </div>
-        <div>{year}&copy;Atameje Driving School</div>
+        <div>
+        <Typography variant="caption" gutterBottom>
+            &copy;Atameje Driving School{year}
+          </Typography>
+          </div>
       </div>
     </div>
   );
