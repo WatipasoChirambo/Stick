@@ -1,6 +1,7 @@
 import React from "react";
 import Package from "./Package";
 import Typography from "@mui/material/Typography";
+import Link from "next/link";
 
 function Trending() {
   return (
@@ -9,7 +10,7 @@ function Trending() {
         <div>
           <div className="grid gap-2 pb-4">
             <Typography variant="body2" gutterBottom>
-              choose from our
+              most purchased
             </Typography>
             <Typography variant="h4" gutterBottom>
               Packages
@@ -19,6 +20,11 @@ function Trending() {
             <Package grade="Grade B" />
             <Package grade="Grade C" />
             <Package grade="Grade D" />
+          </div>
+          <div className="py-14">
+            <Typography variant="caption" gutterBottom>
+            <Link href="/Packages">View All</Link>
+            </Typography>
           </div>
         </div>
       </div>

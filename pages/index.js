@@ -18,7 +18,9 @@ export default function Home() {
       <Levels/>
       <Trending/>
       <ReMembers/>
-      <Map/>
+      <div>
+        <Map/>
+      </div>
       <div className='lg:hidden'>
         <Brief/>
       </div>
