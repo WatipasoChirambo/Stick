@@ -7,17 +7,17 @@ function Hero() {
   return (
     <>
       <div className="flex justify-center text-center wrapper px-10 items-center h-screen">
-        <div className="items-center text-white">
-          <div>
+        <div className="flex justify-center text-white">
+          <div className="lg:w-[70%]">
             <Typography variant="h2" gutterBottom>
-              Auto
+            Become a confident and safe driver
             </Typography>
             <Typography variant="caption" gutterBottom>
               subtitle1. Lorem ipsum dolor sit amet, consectetur adipisicing
               elit. Quos blanditiis tenetur
             </Typography>
             <div className="flex justify-center gap-2 pt-8">
-              <Button variant="contained">Book Now</Button>
+              <Button variant="contained" color="primary">Book Now</Button>
             </div>
           </div>
         </div>
@@ -30,7 +30,7 @@ function Hero() {
               0,
               0,
               80,
-              0.6
+              0.8
             ); /* use rgba for fine adjustments */
             background-blend-mode: multiply;
             background-size: cover;

@@ -8,6 +8,7 @@ import TableHead from "@mui/material/TableHead";
 import TableRow from "@mui/material/TableRow";
 import Paper from "@mui/material/Paper";
 import Typography from "@mui/material/Typography";
+import Button from "@mui/material/Button";
 
 function createData(lessons, price) {
   return { lessons, price };
@@ -27,7 +28,7 @@ export default function Package({ grade }) {
     <>
       <TableContainer
         component={Paper}
-        sx={{ minWidth: 280, width: 300, paddingTop: 2,background:'#C4A862' }}
+        sx={{ minWidth: 280, width: 300, paddingTop: 2,background:'#C4A862',paddingBottom:2 }}
       >
         <Typography variant="h6" gutterBottom>
           {grade}
@@ -59,7 +60,9 @@ export default function Package({ grade }) {
             ))}
           </TableBody>
         </Table>
+        <Button variant="contained" color="primary">Book Package</Button>
       </TableContainer>
+      
     </>
   );
 }

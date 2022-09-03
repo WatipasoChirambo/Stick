@@ -5,6 +5,7 @@ import Image from "next/image";
 import Typography from "@mui/material/Typography";
 import { NavItems } from "../src/utils/routes";
 import Link from "next/link";
+import Button from "@mui/material/Button";
 
 function Navbar() {
   const [toggle, setToggle] = useState(false);
@@ -61,7 +62,7 @@ function Navbar() {
                 <MdMenu size={35} onClick={toggleNav} />
               )}
             </div>
-            <div className="hidden lg:flex gap-4 items-center">
+            <div className="hidden lg:flex gap-8 items-center">
               <div className="flex gap-2">
                 <FaPhone />
                 <Typography variant="caption" gutterBottom>
@@ -69,10 +70,15 @@ function Navbar() {
                 </Typography>
               </div>
               <div className="flex gap-2">
-                <FaEnvelope/>
+                <FaEnvelope />
                 <Typography variant="caption" gutterBottom>
-                info@gmail.com
-              </Typography>
+                  info@gmail.com
+                </Typography>
+              </div>
+              <div className="flex items-center">
+                <Button variant="outlined" color="primary">
+                  Call Us
+                </Button>
               </div>
             </div>
           </div>
