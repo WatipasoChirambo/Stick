@@ -14,7 +14,7 @@ function Footer() {
         </div>
         <div>
         <Typography variant="caption" gutterBottom>
-            &copy;Atameje Driving School{year}
+            &copy;Atameje Driving School {year}
           </Typography>
           </div>
       </div>

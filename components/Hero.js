@@ -17,7 +17,7 @@ function Hero() {
         blanditiis tenetur
       </Typography>
               <div className="flex justify-center gap-2 pt-8">
-              <Button variant="contained">Contained</Button>
+              <Button variant="contained">Book Now</Button>
               </div>
           </div>
         </div>

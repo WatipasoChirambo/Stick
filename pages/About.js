@@ -1,12 +1,13 @@
 import React from "react";
-import Navbar from "../components/Navbar";
-import Paper from "@mui/material/Paper";
+import Info from "../components/Info";
+import OtherNav from "../components/OtherNav";
 
 function About() {
   return (
-    <Paper>
-      <Navbar/>
-    </Paper>
+    <>
+      <OtherNav/>
+      <Info/>
+    </>
   );
 }
 

@@ -37,8 +37,8 @@ function ReMembers() {
                     padding: 0,
                   },
                   935: {
-                    perPage: 3,
-                    perMove: 3,
+                    perPage: 2,
+                    perMove: 2,
                   },
                   1247: {
                     perPage: 4,

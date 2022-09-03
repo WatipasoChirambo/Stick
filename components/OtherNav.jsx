@@ -9,17 +9,17 @@ import {
 import Image from "next/image";
 import Typography from "@mui/material/Typography";
 import { NavItems } from "../src/utils/routes";
-import Link from 'next/link';
+import Link from "next/link";
 
-function Navbar() {
+function OtherNav() {
   const [toggle, setToggle] = useState(false);
   const [navBg, setNavBg] = useState(false);
-  const [route,setRoute] = useState('')
+  const [route, setRoute] = useState("");
 
   useEffect(() => {
-    console.log(route)
+    console.log(route);
   }, [route]);
-  
+
   const toggleNav = () => {
     setToggle(!toggle);
   };
@@ -40,16 +40,16 @@ function Navbar() {
       <nav
         className={
           navBg
-            ? "z-20 fixed top-0 px-10 bg-white w-full text-blue-500 border border-dotted bg-opacity-80"
-            : "z-20 fixed top-0 px-10 w-full text-white"
+            ? "px-10 bg-white w-full text-blue-500 border border-dotted bg-opacity-80"
+            : " px-10 bg-white w-full text-blue-500 border border-dotted bg-opacity-80"
         }
       >
         <div className="flex justify-between items-center">
           <div className="flex items-center gap-12">
             <Image src="/logo.png" height={100} width={170} />
             <div className="hidden lg:flex gap-6">
-              {NavItems.map((val,index) => (
-                <div key={index} onClick={()=>setRoute(val.title)}>
+              {NavItems.map((val, index) => (
+                <div key={index} onClick={() => setRoute(val.title)}>
                   <Typography variant="caption" gutterBottom>
                     <Link href={val.link}>{val.title}</Link>
                   </Typography>
@@ -69,25 +69,25 @@ function Navbar() {
             <div className="hidden lg:flex gap-4 items-center">
               <FaTwitter
                 size={15}
-                className={navBg ? "text-blue-500" : "text-white"}
+                className="text-blue-500" 
               />
               <FaFacebook
                 size={15}
-                className={navBg ? "text-blue-500" : "text-white"}
+                className="text-blue-500"
               />
               <FaInstagram
                 size={15}
-                className={navBg ? "text-blue-500" : "text-white"}
+                className="text-blue-500"
               />
             </div>
           </div>
         </div>
         {toggle && (
           <div className="bg-blue-500 text-white grid gap-4 text-center p-10 bg-opacity-90">
-            {NavItems.map((val,index) => (
-              <div key={index} onClick={()=>setRoute(val.title)}>
+            {NavItems.map((val, index) => (
+              <div key={index} onClick={() => setRoute(val.title)}>
                 <Typography variant="caption" gutterBottom>
-                <Link href={val.link}>{val.title}</Link>
+                  <Link href={val.link}>{val.title}</Link>
                 </Typography>
               </div>
             ))}
@@ -98,4 +98,4 @@ function Navbar() {
   );
 }
 
-export default Navbar;
+export default OtherNav;

@@ -2,7 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import Navbar from '../components/Navbar'
-import Contact from '../components/Contact/Contact'
+import Map from '../components/Map'
 import Hero from '../components/Hero'
 import Levels from '../components/Levels'
 import Trending from '../components/Trending'
@@ -18,6 +18,7 @@ export default function Home() {
       <Levels/>
       <Trending/>
       <ReMembers/>
+      <Map/>
       <Brief/>
       <Footer/>
     </div>
