@@ -19,7 +19,6 @@ function ReMembers() {
           </div>
           <div className="py-10">
             <Splide
-            
               options={{
                 rewind: true,
                 autoplay:true,
