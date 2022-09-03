@@ -1,12 +1,26 @@
-import React from 'react'
+import React from "react";
+import Image from "next/image";
+import Typography from "@mui/material/Typography";
+import { FaStar } from "react-icons/fa";
 
-function Stack({title}) {
-    return (
-        <div className='border border-solid px-4 w-[400px] h-10 overflow-hidden hover:h-[300px] bg-white text-[#EE9408] duration-500 hover:text-white hover:bg-[#EE9408]'>
-            <h4 className='text-3xl text-center pt-1 duration-500 hover:text-left'>{title}</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis placerat eros quis risus pretium aliquet. Phasellus posuere eros ultricies, sagittis sapien at, tristique sem. Vestibulum ut lacinia leo.</p>
+function Stack({ title }) {
+  return (
+    <div className="p-2 rounded-md h-40 grid place-items-center bg-gray-500">
+        <div>
+          <Typography variant="subtitle1" gutterBottom>
+            h5. Heading
+          </Typography>
+          <div className="">
+            <Typography variant="caption">
+              body2. Lorem ipsum dolor sit amet, consectetur adipisicing eli
+            </Typography>
+          </div>
+          <div className="flex justify-center">
+            <FaStar color="gold"/>
+          </div>
         </div>
-    )
+    </div>
+  );
 }
 
-export default Stack
+export default Stack;

@@ -5,9 +5,8 @@ import Image from "next/image";
 import Typography from "@mui/material/Typography";
 import { NavItems } from "../src/utils/routes";
 import Link from "next/link";
-import Button from "@mui/material/Button";
 
-function Navbar() {
+function OtherNav() {
   const [toggle, setToggle] = useState(false);
   const [navBg, setNavBg] = useState(false);
   const [route, setRoute] = useState("");
@@ -36,8 +35,8 @@ function Navbar() {
       <nav
         className={
           navBg
-            ? "z-20 fixed top-0 px-10 bg-white w-full text-blue-500 border border-dotted bg-opacity-80"
-            : "z-20 fixed top-0 px-10 w-full text-white"
+            ? "px-10 bg-white w-full text-blue-500 border border-dotted bg-opacity-80"
+            : " px-10 bg-white w-full text-blue-500 border border-dotted bg-opacity-80"
         }
       >
         <div className="flex justify-between items-center">
@@ -62,29 +61,24 @@ function Navbar() {
                 <MdMenu size={35} onClick={toggleNav} />
               )}
             </div>
-            <div className="hidden lg:flex gap-8 items-center">
-              <div className="flex gap-2">
+            <div className="hidden lg:flex gap-4 items-center">
+            <div className="flex gap-2">
                 <FaPhone />
                 <Typography variant="caption" gutterBottom>
                   +265995963429
                 </Typography>
               </div>
               <div className="flex gap-2">
-                <FaEnvelope />
+                <FaEnvelope/>
                 <Typography variant="caption" gutterBottom>
-                  info@gmail.com
-                </Typography>
-              </div>
-              <div className="flex items-center">
-                <Button variant="outlined" color="primary">
-                  Call Us
-                </Button>
+                info@gmail.com
+              </Typography>
               </div>
             </div>
           </div>
         </div>
         {toggle && (
-          <div className="bg-[#839FFF] text-white grid gap-4 text-center p-10 bg-opacity-92">
+          <div className="bg-blue-500 text-white grid gap-4 text-center p-10 bg-opacity-90">
             {NavItems.map((val, index) => (
               <div key={index} onClick={() => setRoute(val.title)}>
                 <Typography variant="caption" gutterBottom>
@@ -99,4 +93,4 @@ function Navbar() {
   );
 }
 
-export default Navbar;
+export default OtherNav;

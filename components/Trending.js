@@ -1,26 +1,38 @@
 import React from "react";
-import Sector from "./Sector";
-
+import Package from "./Package";
+import Typography from "@mui/material/Typography";
+import Link from "next/link";
+import { FaArrowRight } from "react-icons/fa";
+import Button from "@mui/material/Button";
 
 function Trending() {
   return (
     <>
-      <div className="px-10 pt-8 flex justify-center m-auto">
+      <div className="px-10 py-20 text-center flex justify-center align-center m-auto">
         <div>
-          <h3 className="text-center text-xl lg:text-3xl font-black w-[215px] font-bold border-b-4 m-auto lg:w-[300px] border-orange-500">INDUSTRY SECTORS</h3>
-          <div className="flex flex-wrap gap-12 pt-10">
-            <Sector title="FOOD & NUTRITION" />
-            <Sector title="AGRICULTURE" />
-            <Sector title="INFORMATION TECHNOLOGY" />
-            <Sector title="HEALTH" />
-            <Sector title="INDUSTRIAL HUB" />
+          <div className="grid gap-2 pb-4">
+            <Typography variant="body2" gutterBottom>
+              most purchased
+            </Typography>
+            <Typography variant="h4" gutterBottom>
+              Packages
+            </Typography>
+          </div>
+          <div className="flex justify-center flex-wrap gap-12 pt-10">
+            <Package grade="Grade B" />
+            <Package grade="Grade C" />
+            <Package grade="Grade D" />
+          </div>
+          <div className="py-14 flex justify-center gap-2">
+            <Link href="/Packages">
+              <Button variant="outlined">
+                View All
+              </Button>
+            </Link>
           </div>
         </div>
       </div>
-      <style jsx>
-        {`
-        `}
-      </style>
+      <style jsx>{``}</style>
     </>
   );
 }
