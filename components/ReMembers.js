@@ -17,7 +17,6 @@ function ReMembers() {
             Testimonials
           </Typography>
           </div>
-          
           <div className="py-10">
             <Splide
             
