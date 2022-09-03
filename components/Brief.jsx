@@ -5,7 +5,7 @@ import { FaPhone, FaEnvelope, FaGlobe } from "react-icons/fa";
 
 function Brief() {
   return (
-    <div className="grid place-items-center px-10 py-20 md:flex lg:flex gap-6 px-10">
+    <div className="grid place-items-center px-10 py-10 md:flex lg:flex gap-6 px-10">
       <div className="grid gap-2 lg:flex gap-10 justify-between">
         <div className="grid gap-2">
           <div>

@@ -7,10 +7,7 @@ import Paper from "@mui/material/Paper";
 
 function Stack({ title }) {
   return (
-    <div className="m-2">
-        <div style={{ paddingTop: 2 }}>
-          <Image src={Why} className="rounded-full" height={100} width={100} />
-        </div>
+    <div className="p-2 border-2 rounded-md h-40 grid place-items-center">
         <div>
           <Typography variant="subtitle1" gutterBottom>
             h5. Heading

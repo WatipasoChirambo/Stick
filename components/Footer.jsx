@@ -13,7 +13,7 @@ function Footer() {
           <Image src="/logo.png" height={100} width={170} />
         </div>
         <div>
-        <Typography variant="caption" gutterBottom>
+        <Typography variant="subtitle1" gutterBottom>
             &copy;Atameje Driving School {year}
           </Typography>
           </div>
