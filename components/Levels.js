@@ -5,7 +5,7 @@ function Levels() {
   return (
     <div className="flex gap-10 bg-[#839FFF] justify-center items-center p-14 text-white">
       <div className="grid place-items-center text-center">
-        <Typography variant="h5" gutterBottom>
+        <Typography variant="h6" gutterBottom>
           300+
         </Typography>
         <Typography variant="body2">
@@ -13,7 +13,7 @@ function Levels() {
         </Typography>
       </div>
       <div className="grid place-items-center text-center">
-        <Typography variant="h5" gutterBottom>
+        <Typography variant="h6" gutterBottom>
           10
         </Typography>
         <Typography variant="body2">
@@ -21,7 +21,7 @@ function Levels() {
         </Typography>
       </div>
       <div className="grid place-items-center text-center">
-        <Typography variant="h5" gutterBottom>
+        <Typography variant="h6" gutterBottom>
           1,000+
         </Typography>
         <Typography variant="body2">
