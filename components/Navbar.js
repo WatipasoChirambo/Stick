@@ -78,7 +78,7 @@ function Navbar() {
           </div>
         </div>
         {toggle && (
-          <div className="bg-blue-500 text-white grid gap-4 text-center p-10 bg-opacity-90">
+          <div className="bg-[#839FFF] text-white grid gap-4 text-center p-10 bg-opacity-92">
             {NavItems.map((val, index) => (
               <div key={index} onClick={() => setRoute(val.title)}>
                 <Typography variant="caption" gutterBottom>

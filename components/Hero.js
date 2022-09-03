@@ -12,7 +12,7 @@ function Hero() {
           <Typography variant="h2" gutterBottom>
         h2. Heading
       </Typography>
-      <Typography variant="subtitle1" gutterBottom>
+      <Typography variant="caption" gutterBottom>
         subtitle1. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos
         blanditiis tenetur
       </Typography>

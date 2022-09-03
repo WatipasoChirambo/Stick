@@ -27,21 +27,21 @@ export default function Package({ grade }) {
     <>
       <TableContainer
         component={Paper}
-        sx={{ minWidth: 280, width: 300, paddingTop: 2,background:'#C0A975' }}
+        sx={{ minWidth: 280, width: 300, paddingTop: 2,background:'#C4A862' }}
       >
-        <Typography variant="subtitle1" gutterBottom>
+        <Typography variant="h6" gutterBottom>
           {grade}
         </Typography>
         <Table aria-label="Grade B table">
           <TableHead>
             <TableRow>
               <TableCell align="center">
-                <Typography variant="caption" gutterBottom>
+                <Typography variant="subtitle1" gutterBottom>
                   Lessons
                 </Typography>
               </TableCell>
               <TableCell align="center">
-                <Typography variant="caption" gutterBottom>
+                <Typography variant="subtitle1" gutterBottom>
                   Price
                 </Typography>
               </TableCell>
