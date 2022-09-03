@@ -27,7 +27,7 @@ export default function Package({ grade }) {
     <>
       <TableContainer
         component={Paper}
-        sx={{ minWidth: 280, width: 300, paddingTop: 2 }}
+        sx={{ minWidth: 280, width: 300, paddingTop: 2,background:'#C0A975' }}
       >
         <Typography variant="subtitle1" gutterBottom>
           {grade}
