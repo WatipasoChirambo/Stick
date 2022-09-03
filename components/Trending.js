@@ -2,6 +2,7 @@ import React from "react";
 import Package from "./Package";
 import Typography from "@mui/material/Typography";
 import Link from "next/link";
+import { FaArrowRight } from "react-icons/fa";
 
 function Trending() {
   return (
@@ -21,10 +22,13 @@ function Trending() {
             <Package grade="Grade C" />
             <Package grade="Grade D" />
           </div>
-          <div className="py-14">
-            <Typography variant="caption" gutterBottom>
-            <Link href="/Packages">View All</Link>
+          <div className="py-14 flex justify-center gap-2">
+            <Typography variant="caption" gutterBottom color="#2563EB">
+              <Link href="/Packages">View All</Link>
             </Typography>
+            <Link href="/Packages">
+              <FaArrowRight />
+            </Link>
           </div>
         </div>
       </div>
