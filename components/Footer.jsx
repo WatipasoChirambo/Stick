@@ -7,7 +7,7 @@ let year = d.getFullYear();
 
 function Footer() {
   return (
-    <div className="py-12 flex justify-center px-10">
+    <div className="pb-8 flex justify-center px-10 lg:py-12">
       <div>
         <div className="flex justify-center">
           <Image src="/logo.png" height={100} width={170} />

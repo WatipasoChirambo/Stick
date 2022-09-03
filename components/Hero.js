@@ -25,7 +25,7 @@ function Hero() {
       <style jsx>
       {`
         .wrapper{
-            background:url("hero.jpg");
+            background:url("hero.jpg") center;
             background-color: rgba(0, 0, 80, 0.60); /* use rgba for fine adjustments */
   background-blend-mode: multiply;
             background-size:cover;
