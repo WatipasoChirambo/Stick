@@ -3,7 +3,7 @@ import Typography from "@mui/material/Typography";
 
 function Levels() {
   return (
-    <div className="flex gap-10 bg-[#103849] justify-center items-center p-14 text-white">
+    <div className="flex gap-10 bg-[#141516] justify-center items-center p-14 text-white">
       <div className="grid place-items-center text-center">
         <Typography variant="h6" gutterBottom>
           300+

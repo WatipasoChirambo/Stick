@@ -7,13 +7,13 @@ import Stack from "./Stack";
 function ReMembers() {
   return (
     <>
-      <div className="py-20 text-center flex justify-center bg-[#E6F4F1] align-center m-auto">
+      <div className="py-20 text-center flex justify-center bg-[#2563EB] align-center m-auto">
         <div className="p-4">
           <div className="grid gap-2 pb-4">
-            <Typography variant="body2" gutterBottom>
+            <Typography variant="body2" gutterBottom color="silver">
             Our Customers
           </Typography>
-          <Typography variant="h4" gutterBottom>
+          <Typography variant="h4" gutterBottom color="white">
             Testimonials
           </Typography>
           </div>
@@ -26,10 +26,12 @@ function ReMembers() {
                 autoplay:true,
                 perPage: 2,
                 perMove: 2,
+                arrows:false,
                 gap: 10,
                 padding:1,
                 focus:'center',
-                pagination: false,
+                pagination: true,
+                easing:'ease',
                 breakpoints: {
                   623: {
                     perPage: 1,

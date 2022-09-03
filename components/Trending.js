@@ -26,7 +26,7 @@ function Trending() {
           <div className="py-14 flex justify-center gap-2">
             <Link href="/Packages">
               <Button variant="outlined">
-                ViewAll
+                View All
               </Button>
             </Link>
           </div>

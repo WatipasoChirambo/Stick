@@ -1,13 +1,11 @@
 import React from "react";
 import Image from "next/image";
-import Why from "../images/why.png";
 import Typography from "@mui/material/Typography";
-import Button from "@mui/material/Button";
-import Paper from "@mui/material/Paper";
+import { FaStar } from "react-icons/fa";
 
 function Stack({ title }) {
   return (
-    <div className="p-2 rounded-md h-40 grid place-items-center bg-[#EEE8A9]">
+    <div className="p-2 rounded-md h-40 grid place-items-center bg-gray-500">
         <div>
           <Typography variant="subtitle1" gutterBottom>
             h5. Heading
@@ -16,6 +14,9 @@ function Stack({ title }) {
             <Typography variant="caption">
               body2. Lorem ipsum dolor sit amet, consectetur adipisicing eli
             </Typography>
+          </div>
+          <div className="flex justify-center">
+            <FaStar color="gold"/>
           </div>
         </div>
     </div>

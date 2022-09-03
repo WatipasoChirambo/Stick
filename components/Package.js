@@ -28,7 +28,13 @@ export default function Package({ grade }) {
     <>
       <TableContainer
         component={Paper}
-        sx={{ minWidth: 280, width: 300, paddingTop: 2,background:'#C4A862',paddingBottom:2 }}
+        sx={{
+          minWidth: 280,
+          width: 300,
+          paddingTop: 2,
+          background: "#AAA9BC",
+          paddingBottom: 2,
+        }}
       >
         <Typography variant="h6" gutterBottom>
           {grade}
@@ -60,9 +66,12 @@ export default function Package({ grade }) {
             ))}
           </TableBody>
         </Table>
-        <Button variant="contained" color="primary">Book Package</Button>
+        <div className="pt-6">
+          <Button variant="contained" color="primary">
+            Book Package
+          </Button>
+        </div>
       </TableContainer>
-      
     </>
   );
 }

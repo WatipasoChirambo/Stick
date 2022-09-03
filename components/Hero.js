@@ -10,7 +10,7 @@ function Hero() {
         <div className="flex justify-center text-white">
           <div className="lg:w-[70%]">
             <Typography variant="h2" gutterBottom>
-            Become a confident and safe driver
+            Become a <span className="text-[#BFA5A4]">confident</span> and <span className="text-[#DC003E]">safe</span>  driver
             </Typography>
             <Typography variant="caption" gutterBottom>
               subtitle1. Lorem ipsum dolor sit amet, consectetur adipisicing
