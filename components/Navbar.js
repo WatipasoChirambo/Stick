@@ -1,25 +1,20 @@
 import React, { useState, useEffect } from "react";
 import { MdMenu, MdClose } from "react-icons/md";
-import {
-  FaLinkedinIn,
-  FaFacebook,
-  FaTwitter,
-  FaInstagram,
-} from "react-icons/fa";
+import { FaEnvelope, FaPhone } from "react-icons/fa";
 import Image from "next/image";
 import Typography from "@mui/material/Typography";
 import { NavItems } from "../src/utils/routes";
-import Link from 'next/link';
+import Link from "next/link";
 
 function Navbar() {
   const [toggle, setToggle] = useState(false);
   const [navBg, setNavBg] = useState(false);
-  const [route,setRoute] = useState('')
+  const [route, setRoute] = useState("");
 
   useEffect(() => {
-    console.log(route)
+    console.log(route);
   }, [route]);
-  
+
   const toggleNav = () => {
     setToggle(!toggle);
   };
@@ -48,8 +43,8 @@ function Navbar() {
           <div className="flex items-center gap-12">
             <Image src="/logo.png" height={100} width={170} />
             <div className="hidden lg:flex gap-6">
-              {NavItems.map((val,index) => (
-                <div key={index} onClick={()=>setRoute(val.title)}>
+              {NavItems.map((val, index) => (
+                <div key={index} onClick={() => setRoute(val.title)}>
                   <Typography variant="caption" gutterBottom>
                     <Link href={val.link}>{val.title}</Link>
                   </Typography>
@@ -67,27 +62,27 @@ function Navbar() {
               )}
             </div>
             <div className="hidden lg:flex gap-4 items-center">
-              <FaTwitter
-                size={15}
-                className={navBg ? "text-blue-500" : "text-white"}
-              />
-              <FaFacebook
-                size={15}
-                className={navBg ? "text-blue-500" : "text-white"}
-              />
-              <FaInstagram
-                size={15}
-                className={navBg ? "text-blue-500" : "text-white"}
-              />
+              <div className="flex gap-2">
+                <FaPhone />
+                <Typography variant="caption" gutterBottom>
+                  +265995963429
+                </Typography>
+              </div>
+              <div className="flex gap-2">
+                <FaEnvelope/>
+                <Typography variant="caption" gutterBottom>
+                info@gmail.com
+              </Typography>
+              </div>
             </div>
           </div>
         </div>
         {toggle && (
           <div className="bg-blue-500 text-white grid gap-4 text-center p-10 bg-opacity-90">
-            {NavItems.map((val,index) => (
-              <div key={index} onClick={()=>setRoute(val.title)}>
+            {NavItems.map((val, index) => (
+              <div key={index} onClick={() => setRoute(val.title)}>
                 <Typography variant="caption" gutterBottom>
-                <Link href={val.link}>{val.title}</Link>
+                  <Link href={val.link}>{val.title}</Link>
                 </Typography>
               </div>
             ))}

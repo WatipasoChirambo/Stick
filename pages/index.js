@@ -19,7 +19,9 @@ export default function Home() {
       <Trending/>
       <ReMembers/>
       <Map/>
-      <Brief/>
+      <div className='lg:hidden'>
+        <Brief/>
+      </div>
       <Footer/>
     </div>
   )

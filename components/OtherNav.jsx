@@ -1,11 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { MdMenu, MdClose } from "react-icons/md";
-import {
-  FaLinkedinIn,
-  FaFacebook,
-  FaTwitter,
-  FaInstagram,
-} from "react-icons/fa";
+import { FaEnvelope, FaPhone } from "react-icons/fa";
 import Image from "next/image";
 import Typography from "@mui/material/Typography";
 import { NavItems } from "../src/utils/routes";
@@ -67,18 +62,18 @@ function OtherNav() {
               )}
             </div>
             <div className="hidden lg:flex gap-4 items-center">
-              <FaTwitter
-                size={15}
-                className="text-blue-500" 
-              />
-              <FaFacebook
-                size={15}
-                className="text-blue-500"
-              />
-              <FaInstagram
-                size={15}
-                className="text-blue-500"
-              />
+            <div className="flex gap-2">
+                <FaPhone />
+                <Typography variant="caption" gutterBottom>
+                  +265995963429
+                </Typography>
+              </div>
+              <div className="flex gap-2">
+                <FaEnvelope/>
+                <Typography variant="caption" gutterBottom>
+                info@gmail.com
+              </Typography>
+              </div>
             </div>
           </div>
         </div>
