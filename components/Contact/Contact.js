@@ -8,10 +8,10 @@ import Button from "@mui/material/Button";
 
 export default function Contact() {
   return (
-    <Box sx={{padding:5,display:'flex',flexWrap:'wrap',gap:5,justifyContent:'center',alignItems:'center'}}>
+    <Box sx={{padding:5,display:'flex',flexWrap:'wrap',flexDirection:'column',gap:5,justifyContent:'center',alignItems:'center'}}>
       <Grid sx={{textAlign:'center'}}>
-        <Typography variant="caption" gutterBottom>
-          Want to get in touch?
+        <Typography variant="subtitle2" gutterBottom>
+          Drop us a message
         </Typography>
         <Typography variant="h4" gutterBottom>
           Contact Us
