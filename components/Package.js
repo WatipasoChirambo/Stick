@@ -33,7 +33,7 @@ export default function Package({ grade }) {
           minWidth: 280,
           width: 300,
           paddingTop: 2,
-          background: "#AAA9BC",
+          background: "#D7EFF7",
           paddingBottom: 2,
         }}
       >

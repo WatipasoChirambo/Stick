@@ -11,7 +11,7 @@ function ReMembers() {
         <div className="p-4">
           <div className="grid gap-2 pb-4">
             <Typography variant="subtitle2" gutterBottom color="silver">
-            Our Customers
+            Customers
           </Typography>
           <Typography variant="h4" gutterBottom color="white">
             Testimonials

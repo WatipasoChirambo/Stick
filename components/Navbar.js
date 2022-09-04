@@ -51,7 +51,6 @@ function Navbar() {
               ))}
             </div>
           </div>
-
           <div className="flex items-center ">
             <div className="lg:hidden">
               {toggle ? (

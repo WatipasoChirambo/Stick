@@ -11,7 +11,7 @@ function Trending() {
       <div className="px-10 py-20 text-center flex justify-center align-center m-auto">
         <div>
           <div className="grid gap-2 pb-4">
-            <Typography variant="subtitle2" color="#0C389F">
+            <Typography variant="subtitle2" color="#D7EFF7">
               Recommended
             </Typography>
             <Typography variant="h4" gutterBottom>

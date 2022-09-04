@@ -30,7 +30,7 @@ function Footer() {
           </div>
           <div>
             <Typography variant="subtitle1">PO BOX 30163, Blantyre, Malawi</Typography>
-            <Typography variant="subtitle1" gutterBottom>
+            <Typography variant="subtitle2" gutterBottom>
               COPYRIGHT &copy; {year} ATAMEJE DRIVING SCHOOL
             </Typography>
           </div>
