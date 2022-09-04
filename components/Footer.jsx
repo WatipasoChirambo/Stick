@@ -8,7 +8,7 @@ let year = d.getFullYear();
 
 function Footer() {
   return (
-    <div className="flex pb-8 justify-center px-10 lg:py-12">
+    <div className="text-center flex pb-8 justify-center px-10 lg:py-12">
       <div>
         <div className="grid place-items-center pt-4">
           <div className="pb-4 text-center">
