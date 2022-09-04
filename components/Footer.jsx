@@ -12,7 +12,7 @@ function Footer() {
       <div>
         <div className="grid place-items-center pt-4">
           <div className="pb-4 text-center">
-            <Typography variant="body2" gutterBottom>
+            <Typography variant="body2" gutterBottom color="red">
               Follow us on
             </Typography>
             <Typography variant="h4" gutterBottom>

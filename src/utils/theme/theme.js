@@ -29,7 +29,7 @@ export const theme = createTheme({
     },
     h4:{
       fontFamily:'Heebo',
-      fontSize: '2rem',
+      fontSize: '2.3rem',
       fontWeight:800,
       '@media (max-width:600px)': {
         fontSize: '1.5rem',
