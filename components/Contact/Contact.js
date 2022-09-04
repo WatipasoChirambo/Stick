@@ -8,7 +8,7 @@ import Button from "@mui/material/Button";
 
 export default function Contact() {
   return (
-    <Paper sx={{padding:5,display:'flex',flexWrap:'wrap',gap:5,justifyContent:'center',alignItems:'center'}}>
+    <Box sx={{padding:5,display:'flex',flexWrap:'wrap',gap:5,justifyContent:'center',alignItems:'center'}}>
       <Grid sx={{textAlign:'center'}}>
         <Typography variant="caption" gutterBottom>
           Want to get in touch?
@@ -17,8 +17,8 @@ export default function Contact() {
           Contact Us
         </Typography>
       </Grid>
-      <Box component="form">
-        <Grid container spacing={2}>
+      <Box component="form" sx={{display:'grid',placeItems:'center'}}>
+        <Grid container spacing={2} sx={{paddingBottom:4}}>
           <Grid item xs={12}>
             <TextField
               fullWidth
@@ -48,6 +48,6 @@ export default function Contact() {
         </Grid>
         <Button variant="contained">Send Message</Button>
       </Box>
-    </Paper>
+    </Box>
   );
 }

@@ -35,8 +35,8 @@ function OtherNav() {
       <nav
         className={
           navBg
-            ? "px-10 bg-white w-full text-blue-500 border border-dotted bg-opacity-80"
-            : " px-10 bg-white w-full text-blue-500 border border-dotted bg-opacity-80"
+            ? "px-10 bg-white w-full text-blue-500 border border-solid bg-opacity-80"
+            : " px-10 bg-white w-full text-blue-500 border border-solid bg-opacity-80"
         }
       >
         <div className="flex justify-between items-center">
