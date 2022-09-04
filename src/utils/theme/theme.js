@@ -23,7 +23,7 @@ export const theme = createTheme({
       }
     },
     h4:{
-      fontSize: '4rem',
+      fontSize: '3rem',
       fontWeight:800,
       '@media (max-width:600px)': {
         fontSize: '1.5rem',
@@ -31,7 +31,7 @@ export const theme = createTheme({
       },
     },
     h6:{
-      fontSize: '2rem',
+      fontSize: '1.5rem',
       fontWeight:600,
       '@media (max-width:600px)': {
         fontSize: '1.4rem',
@@ -60,8 +60,17 @@ export const theme = createTheme({
         fontSize:14
       }
     },
+    subtitle2: {
+      fontSize: 18,
+      fontWeight:600,
+      color:'#35383D',
+      '@media (max-width:600)':{
+        fontSize:14
+      }
+    },
     body2: {
-      fontWeight: 400,
+      fontWeight: 600,
+      fontSize:'1rem',
       color:'#35383D',
     },
     button: {
