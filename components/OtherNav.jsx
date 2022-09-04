@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect,useContext } from "react";
 import { MdMenu, MdClose } from "react-icons/md";
 import { FaEnvelope, FaPhone } from "react-icons/fa";
 import Image from "next/image";
@@ -6,15 +6,13 @@ import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button"
 import { NavItems } from "../src/utils/routes";
 import Link from "next/link";
+import {AppContext} from "../pages/_app";
 
 function OtherNav() {
   const [toggle, setToggle] = useState(false);
   const [navBg, setNavBg] = useState(false);
-  const [route, setRoute] = useState("");
+  const value = useContext(AppContext)
 
-  useEffect(() => {
-    console.log(route);
-  }, [route]);
 
   const toggleNav = () => {
     setToggle(!toggle);
@@ -45,8 +43,8 @@ function OtherNav() {
             <Image src="/logo.png" height={100} width={170} />
             <div className="hidden lg:flex gap-6">
               {NavItems.map((val, index) => (
-                <div key={index} onClick={() => setRoute(val.title)}>
-                  <Typography variant="caption" gutterBottom>
+                <div key={index} onClick={() => value.setRoute(val.title)}>
+                  <Typography variant="caption" gutterBottom className={value.route === val.title && "underline scale-50"}>
                     <Link href={val.link}>{val.title}</Link>
                   </Typography>
                 </div>
@@ -86,8 +84,8 @@ function OtherNav() {
         {toggle && (
           <div className="bg-blue-500 text-white grid gap-4 text-center p-10 bg-opacity-90">
             {NavItems.map((val, index) => (
-              <div key={index} onClick={() => setRoute(val.title)}>
-                <Typography variant="caption" gutterBottom>
+              <div key={index} onClick={() => value.setRoute(val.title)}>
+                <Typography variant="caption" gutterBottom className={value.route === val.title && "underline scale-50"}>
                   <Link href={val.link}>{val.title}</Link>
                 </Typography>
               </div>
