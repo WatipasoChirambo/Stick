@@ -7,13 +7,13 @@ import Stack from "./Stack";
 function ReMembers() {
   return (
     <>
-      <div className="py-20 text-center flex justify-center bg-[#248AA3] align-center m-auto">
+      <div className="py-20 text-center flex justify-center bg-[#F1EDFF] align-center m-auto">
         <div className="p-4">
           <div className="grid gap-2 pb-4">
-            <Typography variant="subtitle2" gutterBottom color="silver">
+            <Typography variant="subtitle2" gutterBottom color="#6F6C9F">
             Customers
           </Typography>
-          <Typography variant="h4" gutterBottom color="white">
+          <Typography variant="h4" gutterBottom>
             Testimonials
           </Typography>
           </div>
