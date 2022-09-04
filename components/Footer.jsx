@@ -30,8 +30,7 @@ function Footer() {
           </div>
           <div>
             <Typography variant="subtitle1" gutterBottom>
-              COPYRIGHT &copy; {year} ATAMEJE DRIVING SCHOOL - ALL RIGHTS
-              RESERVED.
+              COPYRIGHT &copy; {year} ATAMEJE DRIVING SCHOOL
             </Typography>
           </div>
         </div>
