@@ -1,4 +1,4 @@
-import * as React from "react";
+import React, { useContext } from "react";
 import { styled } from "@mui/material/styles";
 import Table from "@mui/material/Table";
 import TableBody from "@mui/material/TableBody";
@@ -10,6 +10,8 @@ import Paper from "@mui/material/Paper";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import {phone} from './Hero'
+
+
 
 function createData(lessons, price) {
   return { lessons, price };
@@ -25,6 +27,7 @@ const rows = [
 ("");
 
 export default function Package({ grade }) {
+
   return (
     <>
       <TableContainer

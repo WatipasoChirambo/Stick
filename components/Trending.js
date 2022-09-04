@@ -1,11 +1,14 @@
-import React from "react";
+import React, {useContext} from "react";
 import Package from "./Package";
 import Typography from "@mui/material/Typography";
 import Link from "next/link";
 import { FaArrowRight } from "react-icons/fa";
 import Button from "@mui/material/Button";
+import {AppContext} from "../pages/_app";
 
 function Trending() {
+  const value = useContext(AppContext)
+
   return (
     <>
       <div className="px-10 py-20 text-center flex justify-center align-center m-auto">
@@ -24,7 +27,7 @@ function Trending() {
           </div>
           <div className="py-14 flex justify-center gap-2">
             <Link href="/Packages">
-              <Button variant="outlined">
+              <Button variant="outlined" onClick={()=>value.setRoute("Packages")}>
                 View All
               </Button>
             </Link>
