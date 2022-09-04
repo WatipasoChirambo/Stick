@@ -54,15 +54,15 @@ export const theme = createTheme({
       fontSize: '4rem',
       fontWeight: 800,
       '@media (max-width:600px)': {
-        fontSize: '2.3rem',
+        fontSize: '3rem',
       },
     },
     subtitle1: {
-      fontSize: 16,
+      fontSize: 18,
       fontWeight:600,
       color:'#35383D',
       '@media (max-width:600)':{
-        fontSize:14
+        fontSize:16
       }
     },
     subtitle2: {
@@ -73,10 +73,11 @@ export const theme = createTheme({
         color:'silver'
       }
     },
-    body2: {
-      fontWeight: 600,
+    body1: {
+      fontWeight: 500,
       fontSize:'1rem',
-      color:'#35383D',
+      lineHeight:'1rem',
+      color:'silver'
     },
     button: {
       fontStyle: "italic",

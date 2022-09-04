@@ -18,7 +18,7 @@ function Hero() {
               <span className="text-[#BFA5A4]">Learn</span> From The{" "}
               <span className="text-[#DC003E]">Best</span>
             </Typography>
-            <Typography variant="caption" gutterBottom>
+            <Typography variant="body1" gutterBottom>
               Become a confident and safe driver
             </Typography>
             <div className="flex justify-center gap-2 pt-8">

@@ -21,11 +21,7 @@ function Brief() {
               </div>
               <div className="flex gap-2">
                 <FaEnvelope />
-                <Typography variant="caption">info@gmail.com</Typography>
-              </div>
-              <div className="flex gap-2">
-                <FaGlobe />
-                <Typography variant="caption">www.atameje.com</Typography>
+                <Typography variant="caption">gladyschagunda@yahoo.com</Typography>
               </div>
             </div>
           </div>
