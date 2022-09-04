@@ -17,7 +17,7 @@ function Brief() {
             <div className="grid gap-2">
               <div className="flex gap-2">
                 <FaPhone />
-                <Typography variant="caption">+265995963429</Typography>
+                <Typography variant="caption">+265999 95 83 36</Typography>
               </div>
               <div className="flex gap-2">
                 <FaEnvelope />

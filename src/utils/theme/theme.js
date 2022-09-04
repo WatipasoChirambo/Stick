@@ -5,12 +5,17 @@ export const theme = createTheme({
     MuiButton:{
       styleOverrides:{
         contained:{
-          backgroundColor:"#0C389F!important" 
+          backgroundColor:"#0C389F!important",
+          paddingLeft:25,
+          paddingRight:25,
+          paddingBottom:5,
+          paddingTop:5,
         }
       }
     }
   },
   typography: {
+    fontFamily:'Heebo',
     palette: {
       primary: { main: "#0C389F" },
       secondary: { main: "#DD1659" },
@@ -23,7 +28,8 @@ export const theme = createTheme({
       }
     },
     h4:{
-      fontSize: '3rem',
+      fontFamily:'Heebo',
+      fontSize: '2rem',
       fontWeight:800,
       '@media (max-width:600px)': {
         fontSize: '1.5rem',
@@ -31,11 +37,10 @@ export const theme = createTheme({
       },
     },
     h6:{
-      fontSize: '1.5rem',
+      fontSize: '1.8rem',
       fontWeight:600,
       '@media (max-width:600px)': {
         fontSize: '1.4rem',
-        color:'#35383D',
       },
     },
     h5:{
@@ -46,7 +51,7 @@ export const theme = createTheme({
       },
     },
     h2: {
-      fontSize: '3.5rem',
+      fontSize: '4rem',
       fontWeight: 800,
       '@media (max-width:600px)': {
         fontSize: '2.3rem',
@@ -61,11 +66,11 @@ export const theme = createTheme({
       }
     },
     subtitle2: {
-      fontSize: 18,
+      fontSize: 16,
       fontWeight:600,
-      color:'#35383D',
       '@media (max-width:600)':{
-        fontSize:14
+        fontSize:16,
+        color:'silver'
       }
     },
     body2: {

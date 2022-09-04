@@ -3,6 +3,7 @@ import { MdMenu, MdClose } from "react-icons/md";
 import { FaEnvelope, FaPhone } from "react-icons/fa";
 import Image from "next/image";
 import Typography from "@mui/material/Typography";
+import Button from "@mui/material/Button"
 import { NavItems } from "../src/utils/routes";
 import Link from "next/link";
 
@@ -61,18 +62,23 @@ function OtherNav() {
                 <MdMenu size={35} onClick={toggleNav} />
               )}
             </div>
-            <div className="hidden lg:flex gap-4 items-center">
+            <div className="hidden lg:flex gap-8 items-center">
             <div className="flex gap-2">
                 <FaPhone />
                 <Typography variant="caption" gutterBottom>
-                  +265995963429
+                  +265999 95 83 36
                 </Typography>
               </div>
               <div className="flex gap-2">
                 <FaEnvelope/>
                 <Typography variant="caption" gutterBottom>
-                info@gmail.com
+                gladyschagunda@yahoo.com
               </Typography>
+              </div>
+              <div className="flex items-center">
+                <Button variant="outlined" color="error">
+                  Call Us
+                </Button>
               </div>
             </div>
           </div>

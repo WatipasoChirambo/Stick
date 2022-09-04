@@ -6,6 +6,7 @@ import Typography from "@mui/material/Typography";
 import { NavItems } from "../src/utils/routes";
 import Link from "next/link";
 import Button from "@mui/material/Button";
+import {phone} from '../components/Hero' 
 
 function Navbar() {
   const [toggle, setToggle] = useState(false);
@@ -66,19 +67,21 @@ function Navbar() {
               <div className="flex gap-2">
                 <FaPhone />
                 <Typography variant="caption" gutterBottom>
-                  +265995963429
+                  +265999 95 83 36
                 </Typography>
               </div>
               <div className="flex gap-2">
                 <FaEnvelope />
                 <Typography variant="caption" gutterBottom>
-                  info@gmail.com
+                  gladyschagunda@yahoo.com
                 </Typography>
               </div>
               <div className="flex items-center">
-                <Button variant="outlined" color="primary">
-                  Call Us
-                </Button>
+                <a href={`tel:+${phone}`}>
+                  <Button variant="outlined" color="error">
+                    Call Us
+                  </Button>
+                </a>
               </div>
             </div>
           </div>

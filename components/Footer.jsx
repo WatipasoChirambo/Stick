@@ -13,15 +13,15 @@ function Footer() {
         <div className="grid place-items-center pt-4">
           <div className="pb-4 text-center">
             <Typography variant="body2" gutterBottom>
-            Follow us on
-          </Typography>
-          <Typography variant="h4" gutterBottom>
-            Social Media
-          </Typography>
+              Follow us on
+            </Typography>
+            <Typography variant="h4" gutterBottom>
+              Social Media
+            </Typography>
           </div>
           <div className="flex gap-4">
-            <FaFacebook color="#2563EB" size={20}/>
-            <FaTwitter color="#2563EB" size={20}/>
+            <FaFacebook color="#2563EB" size={20} />
+            <FaTwitter color="#2563EB" size={20} />
           </div>
         </div>
         <div className="pt-10">
@@ -29,6 +29,7 @@ function Footer() {
             <Image src="/logo.png" height={100} width={170} />
           </div>
           <div>
+            <Typography variant="subtitle1">PO BOX 30163, Blantyre, Malawi</Typography>
             <Typography variant="subtitle1" gutterBottom>
               COPYRIGHT &copy; {year} ATAMEJE DRIVING SCHOOL
             </Typography>

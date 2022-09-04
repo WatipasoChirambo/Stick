@@ -9,6 +9,7 @@ import TableRow from "@mui/material/TableRow";
 import Paper from "@mui/material/Paper";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
+import {phone} from './Hero'
 
 function createData(lessons, price) {
   return { lessons, price };
@@ -36,7 +37,7 @@ export default function Package({ grade }) {
           paddingBottom: 2,
         }}
       >
-        <Typography variant="h6" gutterBottom>
+        <Typography variant="h5" gutterBottom>
           {grade}
         </Typography>
         <Table aria-label="Grade B table">
@@ -67,9 +68,11 @@ export default function Package({ grade }) {
           </TableBody>
         </Table>
         <div className="pt-6">
-          <Button variant="contained" color="primary">
-            Book Package
-          </Button>
+          <a href={`tel:+${phone}`}>
+            <Button variant="contained" color="primary">
+              Book Package
+            </Button>
+          </a>
         </div>
       </TableContainer>
     </>

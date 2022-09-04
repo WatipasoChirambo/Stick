@@ -12,7 +12,7 @@ function Trending() {
         <div>
           <div className="grid gap-2 pb-4">
             <Typography variant="subtitle2" color="#0C389F">
-              most purchased
+              Recommended
             </Typography>
             <Typography variant="h4" gutterBottom>
               Packages
@@ -21,7 +21,6 @@ function Trending() {
           <div className="flex justify-center flex-wrap gap-12 pt-10">
             <Package grade="Grade B" />
             <Package grade="Grade C" />
-            <Package grade="Grade D" />
           </div>
           <div className="py-14 flex justify-center gap-2">
             <Link href="/Packages">

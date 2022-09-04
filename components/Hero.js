@@ -3,21 +3,30 @@ import { GiDrumKit, GiSaxophone, GiMusicalKeyboard } from "react-icons/gi";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 
+export const phone = 265999958336
+
 function Hero() {
+
+  
+
   return (
     <>
       <div className="flex justify-center text-center wrapper px-10 items-center h-screen">
         <div className="flex justify-center text-white">
           <div className="lg:w-[70%]">
             <Typography variant="h2" gutterBottom>
-            Become a <span className="text-[#BFA5A4]">confident</span> and <span className="text-[#DC003E]">safe</span>  driver
+              <span className="text-[#BFA5A4]">Learn</span> From The{" "}
+              <span className="text-[#DC003E]">Best</span>
             </Typography>
             <Typography variant="caption" gutterBottom>
-              subtitle1. Lorem ipsum dolor sit amet, consectetur adipisicing
-              elit. Quos blanditiis tenetur
+              Become a confident and safe driver
             </Typography>
             <div className="flex justify-center gap-2 pt-8">
-              <Button variant="contained" color="primary">Book Now</Button>
+              <a href={`tel:+${phone}`}>
+                <Button variant="contained" color="primary">
+                  Book Now
+                </Button>
+              </a>
             </div>
           </div>
         </div>
