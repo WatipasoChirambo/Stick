@@ -34,7 +34,7 @@ function Navbar() {
       <nav
         className={
           navBg
-            ? "z-20 fixed top-0 px-10 bg-white w-full text-blue-500 border border-solid bg-opacity-80"
+            ? "z-20 fixed top-0 px-10 bg-white w-full text-blue-500 border border-solid"
             : "z-20 fixed top-0 px-10 w-full text-white"
         }
       >

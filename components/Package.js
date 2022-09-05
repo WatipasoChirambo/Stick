@@ -72,7 +72,7 @@ export default function Package({ grade }) {
         </Table>
         <div className="pt-6">
           <a href={`tel:+${phone}`}>
-            <Button variant="contained" color="primary">
+            <Button variant="contained" color="secondary">
               Book Package
             </Button>
           </a>

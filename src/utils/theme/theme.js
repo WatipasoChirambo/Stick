@@ -12,10 +12,10 @@ export const theme = createTheme({
           paddingTop:5,
         }
       }
-    }
+    },
   },
   typography: {
-    fontFamily:'Heebo',
+    fontFamily:'PassionOne',
     palette: {
       primary: { main: "#0C389F" },
       secondary: { main: "#DD1659" },
