@@ -7,10 +7,10 @@ function Requirements() {
   return (
     <div
       className="px-10 py-20 bg-fixed bg-cover"
-      style={{ backgroundImage: "url('cones.jpg')" }}
+      style={{ backgroundImage: "url('hero.jpg')" }}
     >
       <div className="grid text-center p-4">
-        <Typography variant="subtitle2" color="white">
+        <Typography variant="subtitle2" color="#248AA3">
           Test And Road Traffic
         </Typography>
         <Typography variant="h4" gutterBottom>
