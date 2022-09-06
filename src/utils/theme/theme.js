@@ -50,11 +50,11 @@ export const theme = createTheme({
         fontSize: '1.5rem',
       },
     },
-    h2: {
-      fontSize: '4rem',
+    h1: {
+      fontSize: '5rem',
       fontWeight: 800,
       '@media (max-width:600px)': {
-        fontSize: '3rem',
+        fontSize: '2.5rem',
       },
     },
     subtitle1: {

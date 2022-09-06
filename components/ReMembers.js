@@ -7,11 +7,11 @@ import Stack from "./Stack";
 function ReMembers() {
   return (
     <>
-      <div className="text-center flex justify-center align-center m-auto">
-        <div className="p-4">
+      <div className="px-10 text-center flex justify-center align-center">
+        <div>
           <div className="grid gap-2 pb-4">
             <Typography variant="subtitle2" gutterBottom color="#6F6C9F">
-            Customers
+            Customer
           </Typography>
           <Typography variant="h4" gutterBottom>
             Testimonials
@@ -22,8 +22,8 @@ function ReMembers() {
               options={{
                 rewind: true,
                 autoplay:true,
-                perPage: 2,
-                perMove: 2,
+                perPage: 1,
+                perMove: 1,
                 arrows:false,
                 gap: 10,
                 padding:1,
@@ -41,8 +41,8 @@ function ReMembers() {
                     perMove: 2,
                   },
                   1247: {
-                    perPage: 4,
-                    perMove: 4,
+                    perPage: 2,
+                    perMove: 2,
                   },
                 },
               }}

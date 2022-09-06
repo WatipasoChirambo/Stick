@@ -5,7 +5,7 @@ import { FaStar } from "react-icons/fa";
 
 function Stack({ title }) {
   return (
-    <div className="p-2 rounded-md h-56 grid place-items-center bg-black">
+    <div className="rounded-md h-56 grid place-items-center bg-black">
         <div>
           <Typography variant="subtitle1" gutterBottom color="white">
             h5. Heading
