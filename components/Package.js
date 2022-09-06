@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext,memo } from "react";
 import { styled } from "@mui/material/styles";
 import Table from "@mui/material/Table";
 import TableBody from "@mui/material/TableBody";
@@ -26,7 +26,7 @@ const rows = [
 ];
 ("");
 
-export default function Package({ grade }) {
+function Package({ grade }) {
 
   return (
     <>
@@ -81,3 +81,5 @@ export default function Package({ grade }) {
     </>
   );
 }
+
+export default memo(Package)

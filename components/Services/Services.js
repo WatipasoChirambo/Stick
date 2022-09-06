@@ -6,7 +6,7 @@ import { allservices } from "../../src/utils/Services/allservices";
 
 function Services() {
   return (
-    <Paper className="bg-[#F1EDFF] text-center py-20 grid place-items-center p-8 mb-10 gap-4 w-full m-auto">
+    <Paper className="bg-[#F1EDFF] text-center py-20 grid place-items-center p-10 gap-4 w-full m-auto">
       <div className="text-center">
         <Typography variant="subtitle2" color="#248AA3">
           Offered

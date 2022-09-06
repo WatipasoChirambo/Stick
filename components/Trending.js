@@ -34,11 +34,7 @@ function Trending() {
             </Link>
           </div>
         </div>
-        <div className="absolute bottom-1/2 right-40 -z-10">
-          <Image src={Guy} height={100} width={100}/>
-        </div>
       </div>
-      <style jsx>{``}</style>
     </>
   );
 }

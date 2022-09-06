@@ -44,7 +44,7 @@ function Navbar() {
             <div className="hidden lg:flex gap-6">
               {NavItems.map((val, index) => (
                 <div key={index} onClick={() => value.setRoute(val.title)}>
-                  <Typography variant="caption" gutterBottom className={value.route === val.title && "underline scale-75"}>
+                  <Typography variant="caption" gutterBottom className={value.route === val.title && "underline text-xl"}>
                     <Link href={val.link}>{val.title}</Link>
                   </Typography>
                 </div>

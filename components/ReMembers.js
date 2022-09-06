@@ -22,7 +22,7 @@ function ReMembers() {
               options={{
                 rewind: true,
                 autoplay:true,
-                perPage: 1,
+                perPage: 2,
                 perMove: 1,
                 arrows:false,
                 gap: 10,

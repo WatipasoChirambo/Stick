@@ -10,6 +10,7 @@ import Footer from "../components/Footer";
 import ReMembers from "../components/ReMembers";
 import Brief from "../components/Brief";
 import Services from "../components/Services/Services";
+import Requirements from "../components/Extras/Requirements";
 
 export default function Home() {
   return (
@@ -19,10 +20,8 @@ export default function Home() {
       <Levels />
       <Trending />
       <Services />
+      <Requirements/>
       <ReMembers />
-      <div>
-        <Map />
-      </div>
       <div className="lg:hidden">
         <Brief />
       </div>
