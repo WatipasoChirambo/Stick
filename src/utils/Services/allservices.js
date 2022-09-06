@@ -1,12 +1,15 @@
-import Defensive from '../../../public/defense.png'
-import Test from '../../../public/test.png'
 import Rider from "../../../public/yle.png";
 import Light from "../../../public/pickup.png";
 import Heavy from "../../../public/truck.png";
+import Interview from "../../../public/interview.png";
+import Assessment from "../../../public/checklist.png";
+import Highway from "../../../public/highway.png";
+import Union from "../../../public/union.png";
+import Driver from "../../../public/driver.png";
 
 export const allservices=[
     {
-        icon:Defensive,
+        icon:Driver,
         title:'Behaviour Defensive Driver Training'
     },
     {
@@ -22,19 +25,19 @@ export const allservices=[
         title:"Heavygoods Training"
     },
     {
-        icon:Test,
+        icon:Interview,
         title:"Driver Interviews"
     },
     {
-        icon:Test,
+        icon:Assessment,
         title:"Driver Assessment"
     },
     {
-        icon:Test,
+        icon:Highway,
         title:"Highway Code Coaching"
     },
     {
-        icon:Test,
+        icon:Union,
         title:"Roadtest Coaching"
     },
 ]
