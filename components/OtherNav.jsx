@@ -73,11 +73,6 @@ function OtherNav() {
                 gladyschagunda@yahoo.com
               </Typography>
               </div>
-              <div className="flex items-center">
-                <Button variant="outlined" color="error">
-                  Call Us
-                </Button>
-              </div>
             </div>
           </div>
         </div>

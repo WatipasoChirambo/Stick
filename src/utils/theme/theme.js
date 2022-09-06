@@ -37,10 +37,10 @@ export const theme = createTheme({
       },
     },
     h6:{
-      fontSize: '1.8rem',
+      fontSize: '2rem',
       fontWeight:600,
       '@media (max-width:600px)': {
-        fontSize: '1.4rem',
+        fontSize: '1.5rem',
       },
     },
     h5:{
@@ -55,6 +55,13 @@ export const theme = createTheme({
       fontWeight: 800,
       '@media (max-width:600px)': {
         fontSize: '2.5rem',
+      },
+    },
+    h3: {
+      fontSize: '3rem',
+      fontWeight: 800,
+      '@media (max-width:600px)': {
+        fontSize: '1.8rem',
       },
     },
     subtitle1: {

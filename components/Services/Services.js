@@ -9,7 +9,7 @@ function Services() {
     <Paper className="bg-[#F1EDFF] text-center py-20 grid place-items-center p-10 gap-4 w-full m-auto">
       <div className="text-center">
         <Typography variant="subtitle2" color="#248AA3">
-          Offered
+          Our
         </Typography>
         <Typography variant="h4" gutterBottom>
           Services

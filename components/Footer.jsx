@@ -1,18 +1,22 @@
-import React from "react";
+import React,{useContext} from "react";
 import Image from "next/image";
 import Typography from "@mui/material/Typography";
 import { FaTwitter, FaFacebook } from "react-icons/fa";
+import {AppContext} from "../pages/_app";
+
 
 const d = new Date();
 let year = d.getFullYear();
 
 function Footer() {
+  const value = useContext(AppContext)
+
   return (
     <div className="text-center flex pb-8 justify-center px-10 lg:py-12">
       <div>
         <div className="grid place-items-center pt-4">
           <div className="pb-4 text-center">
-            <Typography variant="body2" gutterBottom color="red">
+            <Typography variant="body2" gutterBottom color={value.route == "Packages" ? "whitesmoke":"blueviolet"}>
               Follow us on
             </Typography>
             <Typography variant="h4" gutterBottom>

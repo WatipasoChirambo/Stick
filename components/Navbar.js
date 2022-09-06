@@ -72,13 +72,6 @@ function Navbar() {
                   gladyschagunda@yahoo.com
                 </Typography>
               </div>
-              <div className="flex items-center">
-                <a href={`tel:+${phone}`}>
-                  <Button variant="outlined" color="error">
-                    Call Us
-                  </Button>
-                </a>
-              </div>
             </div>
           </div>
         </div>
