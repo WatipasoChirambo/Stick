@@ -1,6 +1,8 @@
 import Defensive from '../../../public/defense.png'
 import Test from '../../../public/test.png'
 import Rider from "../../../public/yle.png";
+import Light from "../../../public/pickup.png";
+import Heavy from "../../../public/truck.png";
 
 export const allservices=[
     {
@@ -12,8 +14,12 @@ export const allservices=[
         title:"Motocycle Rider Training"
     },
     {
-        icon:Rider,
+        icon:Light,
         title:"Lightgoods Training"
+    },
+    {
+        icon:Heavy,
+        title:"Heavygoods Training"
     },
     {
         icon:Test,

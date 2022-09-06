@@ -16,7 +16,7 @@ function Services() {
         </Typography>
       </div>
       <div className="flex ">
-        <div className="flex flex-wrap gap-14 justify-center">
+        <div className="flex flex-wrap gap-20 p-4 justify-center">
           {allservices.map((val, index) => (
             <div key={index}>
               <Service title={val.title} icon={val.icon} />
