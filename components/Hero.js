@@ -33,7 +33,7 @@ function Hero() {
       <style jsx>
         {`
           .wrapper {
-            background: url("hero.jpg") center;
+            background: url("cones.jpg") center;
             background-color: rgba(5, 0, 75, 0.8);
             background-blend-mode: multiply;
             background-size: cover;

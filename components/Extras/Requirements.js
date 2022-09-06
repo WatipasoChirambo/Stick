@@ -10,7 +10,7 @@ function Requirements() {
       style={{ backgroundImage: "url('cones.jpg')" }}
     >
       <div className="grid text-center p-4">
-        <Typography variant="subtitle2" color="#248AA3">
+        <Typography variant="subtitle2" color="white">
           Test And Road Traffic
         </Typography>
         <Typography variant="h4" gutterBottom>

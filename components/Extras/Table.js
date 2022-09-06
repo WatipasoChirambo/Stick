@@ -7,6 +7,7 @@ import TableHead from "@mui/material/TableHead";
 import TableRow from "@mui/material/TableRow";
 import Paper from "@mui/material/Paper";
 import { studentRequirements } from "../../src/utils/roadtraffic/studentRequirements";
+import Typography from "@mui/material/Typography";
 
 export default function MTable() {
   return (
@@ -22,9 +23,11 @@ export default function MTable() {
           {studentRequirements.map((row) => (
             <TableRow key={row.name}>
               <TableCell component="th" scope="row">
-                {row.requirement}
+                <Typography variant="subtitle2">{row.requirement}</Typography>
               </TableCell>
-              <TableCell align="right">MWK {row.price}</TableCell>
+              <TableCell align="right">
+                <Typography color="black" variant="subtitle1">MWK {row.price}</Typography>
+              </TableCell>
             </TableRow>
           ))}
         </TableBody>

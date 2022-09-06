@@ -18,9 +18,9 @@ export default function Home() {
       <Navbar />
       <Hero className="px-10" />
       <Levels />
-      <Trending />
       <Services />
-      <Requirements/>
+      <Trending />
+      <Requirements />
       <ReMembers />
       <div className="lg:hidden">
         <Brief />
