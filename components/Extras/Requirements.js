@@ -6,11 +6,11 @@ import MTable from "./Table";
 function Requirements() {
   return (
     <div
-      className="px-10 py-20 bg-fixed bg-cover"
-      style={{ backgroundImage: "url('hero.jpg')" }}
+      className="px-10 py-20 bg-fixed bg-cover bg-left"
+      style={{ backgroundImage: "url('etras.png')" }}
     >
       <div className="grid text-center p-4">
-        <Typography variant="subtitle2" color="#248AA3">
+        <Typography variant="subtitle2" color="#6F6C9F">
           Test And Road Traffic
         </Typography>
         <Typography variant="h4" gutterBottom>

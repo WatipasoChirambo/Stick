@@ -8,9 +8,9 @@ function Packages() {
   return (
     <div className="grid gap-4 bg-[#35383D]">
       <Navbar />
-      <div className="py-10 px-10 mt-28">
+      <div className="py-10 mt-20">
         <div className="text-center py-6 mb-2">
-        <Typography variant="subtitle2" gutterBottom color="#6F6C9F">
+        <Typography variant="subtitle2" gutterBottom color="#A9A6DC">
             Pick a
           </Typography>
           <Typography variant="h3" gutterBottom color="whitesmoke">

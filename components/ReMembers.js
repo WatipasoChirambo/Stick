@@ -10,7 +10,7 @@ function ReMembers() {
       <div className="px-10 py-12 text-center flex justify-center align-center">
         <div>
           <div className="grid gap-2 pb-4">
-            <Typography variant="subtitle2" gutterBottom color="#6F6C9F">
+            <Typography variant="subtitle2" gutterBottom color="#92001A">
             Customer
           </Typography>
           <Typography variant="h4" gutterBottom>

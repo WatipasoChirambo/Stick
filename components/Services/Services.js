@@ -8,7 +8,7 @@ function Services() {
   return (
     <Paper className="bg-[#F1EDFF] text-center py-20 grid place-items-center p-10 gap-4 w-full m-auto">
       <div className="text-center">
-        <Typography variant="subtitle2" color="#248AA3">
+        <Typography variant="subtitle2" color="#8D4700">
           Our
         </Typography>
         <Typography variant="h4" gutterBottom>

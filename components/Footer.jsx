@@ -3,10 +3,9 @@ import Image from "next/image";
 import Typography from "@mui/material/Typography";
 import { FaTwitter, FaFacebook } from "react-icons/fa";
 import {AppContext} from "../pages/_app";
+import { Year } from '../src/utils/Year/year'
 
 
-const d = new Date();
-let year = d.getFullYear();
 
 function Footer() {
   const value = useContext(AppContext)
@@ -33,9 +32,9 @@ function Footer() {
             <Image src="/logo.png" height={100} width={170} />
           </div>
           <div>
-            <Typography variant="subtitle1">PO BOX 30163, Blantyre, Malawi</Typography>
+            <Typography variant="caption">PO BOX 30163, Blantyre, Malawi</Typography>
             <Typography variant="subtitle2" gutterBottom>
-              COPYRIGHT &copy; {year} ATAMEJE DRIVING SCHOOL
+              &copy; {Year} ATAMEJE DRIVING SCHOOL
             </Typography>
           </div>
         </div>
