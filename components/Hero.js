@@ -12,7 +12,7 @@ function Hero() {
     <>
       <div className="flex text-center justify-center wrapper !px-10 items-center h-screen">
         <div className="flex justify-center text-white ">
-          <div className="lg:w-[70%]">
+          <div>
             <Typography variant="h1" gutterBottom>
               <span className="text-[#BFA5A4]">Learn</span> From The{" "}
               <span className="text-[#DC003E]">Best</span>

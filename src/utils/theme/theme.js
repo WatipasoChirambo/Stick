@@ -54,7 +54,7 @@ export const theme = createTheme({
       fontSize: '5rem',
       fontWeight: 800,
       '@media (max-width:600px)': {
-        fontSize: '2.5rem',
+        fontSize: '3rem',
       },
     },
     h3: {
