@@ -18,9 +18,13 @@ AIMS.
 LIBRARIES
 
 NextJS, 
+
 Material UI,
+
 React Context, 
+
 SanityIO(HeadlessCMS)
+
 
 DELIVERABLES.
 
@@ -28,8 +32,9 @@ Web UI,
 Mobile UI,
 
 NEXT STEPS
+
 Image for the Hero Section.
-Domain Name connection.
+Domain Name intergration.
 
 
 
