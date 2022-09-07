@@ -23,10 +23,10 @@ export default function MTable() {
           {studentRequirements.map((row) => (
             <TableRow key={row.name}>
               <TableCell component="th" scope="row">
-                <Typography variant="subtitle2">{row.requirement}</Typography>
+                <Typography component="subtitle2" color="black">{row.requirement}</Typography>
               </TableCell>
               <TableCell align="right">
-                <Typography color="black" variant="subtitle1">MWK {row.price}</Typography>
+                <Typography color="#0C389F" variant="subtitle1">MWK {row.price}</Typography>
               </TableCell>
             </TableRow>
           ))}
