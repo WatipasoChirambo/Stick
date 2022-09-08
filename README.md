@@ -2,9 +2,13 @@ PROJECT SUMMARY
 
 This is the official Atameje Driving School website.
 
+
+
 WHAT IS ATAMEJE DRIVING SCHOOL.
 
 Atameje Driving school is a Malawi based Driving school found in Blantyre as well as Lilongwe.
+
+
 
 AIMS.
 
@@ -14,22 +18,33 @@ AIMS.
 
 3. Enable access to the companies Information.
 
+
+
  
 LIBRARIES
 
 NextJS, 
+
 Material UI,
+
 React Context, 
+
 SanityIO(HeadlessCMS)
+
+
+
 
 DELIVERABLES.
 
 Web UI,
 Mobile UI,
 
+
+
 NEXT STEPS
+
 Image for the Hero Section.
-Domain Name connection.
+Domain Name intergration.
 
 
 
