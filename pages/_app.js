@@ -1,6 +1,6 @@
 import "../styles/globals.css";
 import React,{useState} from 'react';
-import { createTheme, ThemeProvider } from "@mui/material/styles";
+import { ThemeProvider } from "@mui/material/styles";
 import { theme } from "../src/utils/theme/theme";
 
 export const AppContext = React.createContext();
