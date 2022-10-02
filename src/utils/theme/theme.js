@@ -15,7 +15,7 @@ export const theme = createTheme({
     },
   },
   typography: {
-    fontFamily:'PassionOne',
+    fontFamily:'Roboto',
     palette: {
       primary: { main: "#0C389F" },
       secondary: { main: "#DD1659" },
